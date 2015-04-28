@@ -15,5 +15,9 @@ public class TestRuangKelas {
         adm.InsertIndentitasRuangKelas();
         adm.KondisiRuangKelas();
         adm.LingkunganKelas();
+        adm.KeamananKelas();
+        adm.KebersihanKelas();
+        adm.KenyamananKelas();
+        adm.JumlahKondisiPosisiSarana();
     }
 }

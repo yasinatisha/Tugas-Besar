@@ -1,6 +1,6 @@
 package tugasbesar;
 
-mport java.util.Scanner;
+import java.util.Scanner;
 public class ControlKelas {
      public static void main(String[] args){
         int x;

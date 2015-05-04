@@ -12,12 +12,33 @@ package tugasbesar;
 public class TestRuangKelas {
     public static void main(String[] args) {
         ControlKelas adm = new ControlKelas();
-        adm.InsertIndentitasRuangKelas();
-        adm.KondisiRuangKelas();
-        adm.LingkunganKelas();
-        adm.KeamananKelas();
-        adm.KebersihanKelas();
-        adm.KenyamananKelas();
-        adm.JumlahKondisiPosisiSarana();
+        adm.insert();
+        adm.cetak();
+        adm.hitungluas();
+        adm.hitungrasio();
+        adm.HitungBentukRuang();
+        adm.HitungRasioLuas();
+        adm.AnalisisPintudanJendela();
+        adm.AnalisisKelistrikan();
+        adm.AnalisisLCD();
+        adm.AnalisisLampu();
+        adm.AnalisisKipas();
+        adm.analisisAC();
+        adm.AnalisisInternet();
+        adm.AnalisisCCTV();
+        adm.AnalsisKebersihan();
+        adm.AnalisisSirkulasiUdara();
+        adm.AnalisisPencahayaan();
+        adm.AnalisisKelembapan();
+        adm.AnalisisSuhu();
+        adm.Kebisingan();
+        adm.Bau();
+        adm.Kebocoran();
+        adm.Kerusakan();
+        adm.Keausan();
+        adm.Kekokohan();
+        adm.KunciPintudanJendela();
+        
+
     }
 }

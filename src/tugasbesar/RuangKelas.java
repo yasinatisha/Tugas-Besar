@@ -13,48 +13,41 @@ public class RuangKelas {
    private String namaruang;
    private String lokasiruang;
    private String namafakultas;
-   private int panjang;
-   private int lebar;
-   private int jumlahkursi;
-   private int jumlahjendela;
-   private int jumlahpintu;
-   private double luas;
-   private double rasio;
-   private int jumlahstopkontak;
-   private int kondisistopkontak;
-   private int posisistopkontak;
-   private int jumlahLCD;
-   private int kondisiLCD;
-   private int posisiLCD;
-   private int jumlahlampu;
-   private int posisilampu;
-   private int jumlahkipas;
-   private int posisikipas;
-   private int jumlahAC;
-   private int posisiAC;
-   private int SSID;
-   private int bandwidth;
-   private int jumlahCCTV;
-   private int posisiCCTV;
-   private int sirkulasiudara;
-   private int pencahayaan;
-   private int kelembapan;
-   private int suhu;
+   double panjang;
+   double lebar;
+   double jumlahkursi;
+   double jumlahjendela;
+   double jumlahpintu;
+   double luas;
+   double rasio;
+   int jumlahstopkontak;
+   int kondisistopkontak;
+   int posisistopkontak;
+   int jumlahLCD;
+   int kondisiLCD;
+   int posisiLCD;
+   int jumlahlampu;
+   int posisilampu;
+   int jumlahkipas;
+   int posisikipas;
+   int jumlahAC;
+   int posisiAC;
+   int SSID;
+   int bandwidth;
+   int jumlahCCTV;
+   int posisiCCTV;
+   int sirkulasiudara;
+   int pencahayaan;
+   int kelembapan;
+   int suhu;
     
     
-    double hitungluas(){
-        luas= this.panjang*this.lebar;
-        return luas;
-    }
-    double hitungrasio(){
-        rasio= luas/jumlahkursi;
-        return rasio;
-    }
+    
 
     public String getNamaruang() {
         return namaruang;
     }
-
+     
     public void setNamaruang(String namaruang) {
         this.namaruang = namaruang;
     }
@@ -75,43 +68,43 @@ public class RuangKelas {
         this.namafakultas = namafakultas;
     }
 
-    public int getPanjang() {
+    public double getPanjang() {
         return panjang;
     }
 
-    public void setPanjang(int panjang) {
+    public void setPanjang(double panjang) {
         this.panjang = panjang;
     }
 
-    public int getLebar() {
+    public double getLebar() {
         return lebar;
     }
 
-    public void setLebar(int lebar) {
+    public void setLebar(double lebar) {
         this.lebar = lebar;
     }
 
-    public int getJumlahkursi() {
+    public double getJumlahkursi() {
         return jumlahkursi;
     }
 
-    public void setJumlahkursi(int jumlahkursi) {
+    public void setJumlahkursi(double jumlahkursi) {
         this.jumlahkursi = jumlahkursi;
     }
 
-    public int getJumlahjendela() {
+    public double getJumlahjendela() {
         return jumlahjendela;
     }
 
-    public void setJumlahjendela(int jumlahjendela) {
+    public void setJumlahjendela(double jumlahjendela) {
         this.jumlahjendela = jumlahjendela;
     }
 
-    public int getJumlahpintu() {
+    public double getJumlahpintu() {
         return jumlahpintu;
     }
 
-    public void setJumlahpintu(int jumlahpintu) {
+    public void setJumlahpintu(double jumlahpintu) {
         this.jumlahpintu = jumlahpintu;
     }
 
@@ -274,4 +267,5 @@ public class RuangKelas {
     public void setSuhu(int suhu) {
         this.suhu = suhu;
     }
+
 }

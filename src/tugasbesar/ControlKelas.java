@@ -7,7 +7,7 @@ public class ControlKelas extends RuangKelas {
          
     public ControlKelas(){
     Gedung[0]= new RuangKelas();
-    //Gedung[1]= new RuangKelas();
+    Gedung[1]= new RuangKelas();
 }
     
     void insert(){

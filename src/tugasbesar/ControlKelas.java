@@ -1,15 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package tugasbesar;
 
-/**
- *
- * @author user
- */
 import java.util.Scanner;
 public class ControlKelas extends RuangKelas {
     RuangKelas[] Gedung = new RuangKelas[1];

@@ -27,6 +27,149 @@ public class input {
            Gedung[x].setPanjang(in.nextInt());
            System.out.println("Jumlah Lebar: ");
            Gedung[x].setLebar(in.nextInt());
+package tugasbesar;
+import java.util.Scanner;
+public class input {
+ RuangKelas Gedung = new RuangKelas();
+
+    
+    void insert(){
+            //InputIndentitasRuangKelas 
+           Scanner in= new Scanner (System.in);
+           System.out.println("Nama Ruang: ");
+           Gedung.setNamaruang(in.next());
+           System.out.println("Lokasi Ruangan: ");
+           Gedung.setLokasiruang(in.next());
+           System.out.println("Nama Fakultas: ");
+           Gedung.setNamafakultas(in.next());
+           
+           //InputKondisiRuangKelas
+           System.out.println("Jumlah Panjang: ");
+           Gedung.setPanjang(in.nextInt());
+           System.out.println("Jumlah Lebar: ");
+           Gedung.setLebar(in.nextInt());
+           System.out.println("Jumlah Pintu: ");
+           Gedung.setJumlahpintu(in.nextInt());
+           System.out.println("Jumlah Kursi: ");
+           Gedung.setJumlahkursi(in.nextInt());
+           System.out.println("Jumalah Jendela: ");
+           Gedung.setJumlahjendela(in.nextInt());
+            
+            //InputjumlahKondisiPosisiSarana
+            System.out.println("Masukkan jumlah stop kontak: ");
+            Gedung.setJumlahstopkontak(in.nextInt());
+            System.out.println("Masukkan kondisi stop kontak yang baik: ");
+            Gedung.setKondisistopkontak(in.nextInt());
+            System.out.println("Masukkan posisi stop kontak: ");
+            System.out.println("1.Pojok ruangan");
+            System.out.println("2.Dekat dosen");
+            Gedung.setPosisistopkontak(in.nextInt());
+            System.out.println("Masukkan jumlah kabel LCD: ");
+            Gedung.setJumlahLCD(in.nextInt());
+            System.out.println("Masukkan kondisi kabel LCD: ");
+            System.out.println("1.Berfungsi");
+            System.out.println("2.Tidak berfungsi");
+            Gedung.setKondisiLCD(in.nextInt());
+            System.out.println("Masukkan posisi kabel LCD: ");
+            System.out.println("1.Dekat dosen");
+            System.out.println("2.Lain");
+            Gedung.setPosisiLCD(in.nextInt());
+            System.out.println("Masukkan jumlah dan kondisi lampu: ");
+            Gedung.setJumlahlampu(in.nextInt());
+            System.out.println("Masukkan posisi lampu: ");
+            System.out.println("1.Atap ruangan");
+            System.out.println("2.Lain");
+            Gedung.setPosisilampu(in.nextInt());
+            System.out.println("Masukkan jumlah dan kondisi kipas angin: ");
+            Gedung.setJumlahkipas(in.nextInt());
+            System.out.println("Masukkan posisi kipas angin: ");
+            System.out.println("1.Atap ruangan");
+            System.out.println("2.Lain");
+            Gedung.setPosisikipas(in.nextInt());
+            System.out.println("Masukkan jumlah dan kondisi AC: ");
+            Gedung.setJumlahAC(in.nextInt());
+            System.out.println("Masukkan posisi AC: ");
+            System.out.println("1.Belakang/Samping");
+            System.out.println("2.Lain");
+            Gedung.setPosisiAC(in.nextInt());
+            System.out.println("Pilih SSID: ");
+            System.out.println("1.UMM hotspot");
+            System.out.println("2.Lain");
+            Gedung.setSSID(in.nextInt());
+            System.out.println("Masukkan bandwidth: ");
+            System.out.println("1.Bisa login");
+            System.out.println("2.Tidak bisa login");
+            Gedung.setBandwidth(in.nextInt());
+            System.out.println("Masukkan jumlah dan kondisi CCTV: ");
+            Gedung.setJumlahCCTV(in.nextInt());
+            System.out.println("Masukkan posisi CCTV: ");
+            System.out.println("1.Depan");
+            System.out.println("2.Belakang");
+            Gedung.setPosisiCCTV(in.nextInt());
+            
+            
+            //InputLingkunganKelas
+            System.out.println("Kondisi Lantai");
+            System.out.println("Kondisi Pintu");
+            System.out.println("Kondisi Jendela");
+            System.out.println("Kondisi Atap");
+            System.out.println("Kondisi Dinding");
+            System.out.println("1.  bersih");
+            System.out.println("2.  kotor ");
+            System.out.println("Maukkan pilihan anda: ");
+            x = in.nextInt();
+        
+            //InputKebersihanKelas
+            System.out.println("Masukkan sirkulasi udara: ");
+            System.out.println("1.Lancar");
+            System.out.println("2.Tidak lancar");
+            Gedung.setSirkulasiudara(in.nextInt());
+            System.out.println("Masukkan nilai pencahayaan: ");
+            Gedung.setPencahayaan(in.nextInt());
+            System.out.println("Masukkan kelembapan(%): ");
+            Gedung.setKelembapan(in.nextInt());
+            System.out.println("Masukkan suhu(celcius): ");
+            Gedung.setSuhu(in.nextInt());
+            
+            //InputKenyamananKelas
+           int s,y,z,a,b;
+            System.out.println("Kebisingan");
+            System.out.println("1.  bising");
+            System.out.println("2.  tidak bising ");
+            s = in.nextInt();
+            System.out.println("Bau");
+            System.out.println("1.  bau");
+            System.out.println("2.  tidak bau ");
+            y = in.nextInt();
+            System.out.println("Kebocoran");
+            System.out.println("1.  bocor");
+            System.out.println("2.  tidak bocor ");
+            z = in.nextInt();
+            System.out.println("Kerusakan");
+            System.out.println("1.  rusak");
+            System.out.println("2.  tidak rusak ");
+            a = in.nextInt();
+            System.out.println("Keausan");
+            System.out.println("1.  aus");
+            System.out.println("2.  tidak aus "); 
+            b = in.nextInt();
+
+            //InputKeamananKelas
+            int c,d,e;
+            System.out.println("Kekokohan");
+            System.out.println("1.  kokoh");
+            System.out.println("2.  tidak kokoh ");
+            c = in.nextInt();
+            System.out.println("Kunci Pintu dan jendela");
+            System.out.println("1.  ada");
+            System.out.println("2.  tidak ada ");
+            d = in.nextInt();
+            System.out.println("Bahaya");
+            System.out.println("1.  aman");
+            System.out.println("2.  tidak aman ");
+            e = in.nextInt(); 
+        }
+    }   
            System.out.println("Jumlah Pintu: ");
            Gedung[x].setJumlahpintu(in.nextInt());
            System.out.println("Jumlah Kursi: ");

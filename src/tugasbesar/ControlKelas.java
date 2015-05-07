@@ -312,17 +312,4 @@ public class ControlKelas extends RuangKelas {
         double KeamananRuang=0;
         return KeamananRuang;
     }
-    
-    double cetak(){
-        int x;
-        for(x=0; x<Gedung.length; x++){
-            System.out.println("Nama ruang: " + Gedung[x].getNamaruang());
-            System.out.println("Lokasi ruang: " + Gedung[x].getLokasiruang());
-            System.out.println("Fakultas: " + Gedung[x].getNamafakultas());
-            System.out.println("Luas= " + Gedung[x].luas);
-            System.out.println("Rasio luas= " + Gedung[x].rasio);
-        }
-        double cetak=0;
-        return cetak;
-    }
 }

@@ -164,11 +164,11 @@ public class input extends RuangKelas{
     @Override
     public void cetak() {
     System.out.println(":::::::::::::::::::::::::::::::::::::::::::::");
-            System.out.println("Nama ruang: " + super.getNamaruang());
-            System.out.println("Lokasi ruang: " + super.getLokasiruang());
-            System.out.println("Fakultas: " + super.getNamafakultas());
-            System.out.println("Luas= " + super.luas);
-            System.out.println("Rasio luas= " + super.rasio);
+            System.out.println("Nama ruang: " + getNamaruang());
+            System.out.println("Lokasi ruang: " + getLokasiruang());
+            System.out.println("Fakultas: " + getNamafakultas());
+            System.out.println("Luas= " + luas);
+            System.out.println("Rasio luas= " + rasio);
             System.out.println(":::::::::::::::::::::::::::::::::::::::::::::");
     }
     

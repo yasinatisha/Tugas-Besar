@@ -15,29 +15,17 @@ public class TestRuangKelas {
         adm.cetak();
         adm.hitungluas();
         adm.hitungrasio();
-        adm.HitungBentukRuang();
-        adm.HitungRasioLuas();
-        adm.AnalisisPintudanJendela();
-        adm.AnalisisKelistrikan();
-        adm.AnalisisLCD();
-        adm.AnalisisLampu();
-        adm.AnalisisKipas();
-        adm.analisisAC();
-        adm.AnalisisInternet();
-        adm.AnalisisCCTV();
-        adm.AnalsisKebersihan();
-        adm.AnalisisSirkulasiUdara();
-        adm.AnalisisPencahayaan();
-        adm.AnalisisKelembapan();
-        adm.AnalisisSuhu();
-        adm.Kebisingan();
-        adm.Bau();
-        adm.Kebocoran();
-        adm.Kerusakan();
-        adm.Keausan();
-        adm.Kekokohan();
-        adm.KunciPintudanJendela();
-        
-
+        adm.AnalisisKebersihan(HitungBentukRuang);
+        adm.AnalisisSirkulasiUdara(HitungBentukRuang);
+        adm.AnalisisPencahayaan(HitungBentukRuang);
+        adm.AnalisisKelembapan(HitungBentukRuang);
+        adm.AnalisisSuhu(HitungBentukRuang);
+        adm.Kebisingan(HitungBentukRuang);
+        adm.Bau(HitungBentukRuang);
+        adm.Kebocoran(HitungBentukRuang);
+        adm.Kerusakan(HitungBentukRuang);
+        adm.Keausan(HitungBentukRuang);
+        adm.Kekokohan(HitungBentukRuang);
+        adm.KunciPintudanJendela(HitungBentukRuang);
+        adm.KeamananRuang(HitungBentukRuang);
     }
-}

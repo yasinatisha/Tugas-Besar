@@ -1,16 +1,15 @@
 package tugasbesar;
 
-import java.util.Scanner;
 public class ControlKelas extends RuangKelas {
    
      //method-method analisis
     double hitungluas(){
-        luas= panjang*lebar;
+        this.luas= panjang*lebar;
         return luas;
     }
     
     double hitungrasio(){
-        rasio= luas/jumlahkursi;
+        this.rasio= luas/jumlahkursi;
         return rasio;
     }
     

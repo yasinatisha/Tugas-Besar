@@ -12,7 +12,6 @@ package tugasbesar;
 public class TestRuangKelas {
     public static void main(String[] args) {
         ControlKelas adm = new ControlKelas();
-        adm.insert();
         adm.cetak();
         adm.hitungluas();
         adm.hitungrasio();

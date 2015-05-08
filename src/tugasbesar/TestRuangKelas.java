@@ -12,8 +12,8 @@ package tugasbesar;
 public class TestRuangKelas {
     public static void main(String[] args) {
         ControlKelas adm = new ControlKelas();
-        adm.cetak();
-        adm.hitungluas();
+//        adm.cetak();
+//        adm.hitungluas();
         adm.hitungrasio();
         adm.HitungBentukRuang(HitungBentukRuang);
         adm.HitungRasioLuas(HitungRasioLuas);

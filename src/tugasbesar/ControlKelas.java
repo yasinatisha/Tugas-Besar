@@ -2,6 +2,7 @@ package tugasbesar;
 
 public class ControlKelas extends RuangKelas {
    
+    
      //method-method analisis
     double hitungluas(){
         this.luas= panjang*lebar;

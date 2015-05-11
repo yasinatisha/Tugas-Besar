@@ -9,9 +9,21 @@ package tugasbesar;
  *
  * @author - LENOVO -
  */
-public class TestRuangKelas {
+public class TestRuangKelas{
     public static void main(String[] args, double HitungBentukRuang, double HitungRasioLuas, double JumlahStopkontak, double KondisiStopkontak, double PosisiStopkontak, double JumlahAC, double PosisiAC, double JumlahLCD, double KondisiLCD, double PosisiLCD, double JumlahKipas, double PosisiKipas, double JumlahLampu, double PosisiLampu, double JumlahCCTV, double PosisiCCTV, double InternetSSID, double InternetBandwidth) {
-        ControlKelas adm = new ControlKelas();
+        ControlKelas adm = new ControlKelas () {
+
+            @Override
+            public void cetak() {
+            System.out.println(":::::::::::::::::::::::::::::::::::::::::::::");
+            System.out.println("Nama ruang: " + getNamaruang());
+            System.out.println("Lokasi ruang: " + getLokasiruang());
+            System.out.println("Fakultas: " + getNamafakultas());
+            System.out.println("Luas= " + luas);
+            System.out.println("Rasio luas= " + rasio);
+            System.out.println(":::::::::::::::::::::::::::::::::::::::::::::");
+            }
+        };
         adm.hitungluas();
         adm.hitungrasio();
         adm.HitungBentukRuang(HitungBentukRuang);

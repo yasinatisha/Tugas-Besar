@@ -11,7 +11,7 @@ package tugasbesar;
  */
 public class TestRuangKelas {
     public static void main(String[] args, double HitungBentukRuang, double HitungRasioLuas, double JumlahStopkontak, double KondisiStopkontak, double PosisiStopkontak, double JumlahAC, double PosisiAC, double JumlahLCD, double KondisiLCD, double PosisiLCD, double JumlahKipas, double PosisiKipas, double JumlahLampu, double PosisiLampu, double JumlahCCTV, double PosisiCCTV, double InternetSSID, double InternetBandwidth) {
-        ControlKelas adm = new ControlKelas();
+        ControlKelas adm = new ControlKelas() {};
         adm.cetak();
         adm.hitungluas();
         adm.hitungrasio();

@@ -3,101 +3,93 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package tugasbesar;
+
+/**
+ *
+ * @author Owner
+ */
 import java.util.Scanner;
 public class input extends RuangKelas{    
-   
-   public input (String namaruang,String lokasiruang,String namafakultas,
-           double panjang,double lebar,double jumlahkursi,double jumlahjendela,
-           double jumlahpintu,double luas,double rasio,int jumlahstopkontak,
-           int kondisistopkontak,int posisistopkontak,int jumlahLCD,int kondisiLCD,
-           int posisiLCD,int jumlahlampu,int posisilampu,int jumlahkipas,
-           int posisikipas,int jumlahAC,int posisiAC,int SSID,int bandwidth,
-           int jumlahCCTV,int posisiCCTV,int sirkulasiudara,int pencahayaan,
-           int kelembapan,int suhu){
-       
-       super(namaruang,lokasiruang,namafakultas,panjang,lebar,jumlahkursi,jumlahjendela,
-           jumlahpintu,luas, rasio,jumlahstopkontak,kondisistopkontak,
-           posisistopkontak,jumlahLCD,kondisiLCD,posisiLCD,
-           jumlahlampu,posisilampu,jumlahkipas,
-           posisikipas,jumlahAC,posisiAC,SSID,bandwidth,
-           jumlahCCTV,posisiCCTV,sirkulasiudara,pencahayaan,kelembapan,suhu);
-       
-   }
+
+    public input(String namaruang, String lokasiruang, String namafakultas, double panjang, double lebar, double jumlahkursi, double jumlahjendela, double jumlahpintu, double luas, double rasio, int jumlahstopkontak, int kondisistopkontak, int posisistopkontak, int jumlahLCD, int kondisiLCD, int posisiLCD, int jumlahlampu, int posisilampu, int jumlahkipas, int posisikipas, int jumlahAC, int posisiAC, int SSID, int bandwidth, int jumlahCCTV, int posisiCCTV, int sirkulasiudara, int pencahayaan, int kelembapan, int suhu) {
+        super(namaruang, lokasiruang, namafakultas, panjang, lebar, jumlahkursi, jumlahjendela, jumlahpintu, luas, rasio, jumlahstopkontak, kondisistopkontak, posisistopkontak, jumlahLCD, kondisiLCD, posisiLCD, jumlahlampu, posisilampu, jumlahkipas, posisikipas, jumlahAC, posisiAC, SSID, bandwidth, jumlahCCTV, posisiCCTV, sirkulasiudara, pencahayaan, kelembapan, suhu);
+    }
    
     public void inputkelas(){
         //InputIndentitasRuangKelas 
            Scanner in= new Scanner (System.in);
            System.out.println("Nama Ruang: ");
-           namaruang=in.next();
+           this.namaruang=in.next();
            System.out.println("Lokasi Ruangan: ");
-           lokasiruang=in.next();
+           this.lokasiruang=in.next();
            System.out.println("Nama Fakultas: ");
-           namafakultas=in.next();
+           this.namafakultas=in.next();
            
            //InputKondisiRuangKelas
            System.out.println("Jumlah Panjang: ");
-           super.panjang=in.nextInt();
+           this.panjang=in.nextInt();
            System.out.println("Jumlah Lebar: ");
-           super.lebar=in.nextInt();
+           this.lebar=in.nextInt();
            System.out.println("Jumlah Pintu: ");
-           super.jumlahpintu=in.nextInt();
+           this.jumlahpintu=in.nextInt();
            System.out.println("Jumlah Kursi: ");
-           super.jumlahkursi=in.nextInt();
+           this.jumlahkursi=in.nextInt();
            System.out.println("Jumalah Jendela: ");
-           super.jumlahjendela=in.nextInt();
+           this.jumlahjendela=in.nextInt();
            
            //InputjumlahKondisiPosisiSarana
             System.out.println("Masukkan jumlah stop kontak: ");
-            super.jumlahstopkontak=in.nextInt();
+            this.jumlahstopkontak=in.nextInt();
             System.out.println("Masukkan kondisi stop kontak yang baik: ");
-            super.kondisistopkontak=in.nextInt();
+            this.kondisistopkontak=in.nextInt();
             System.out.println("Masukkan posisi stop kontak: ");
             System.out.println("1.Pojok ruangan");
             System.out.println("2.Dekat dosen");
-            super.posisistopkontak=in.nextInt();
+            this.posisistopkontak=in.nextInt();
             System.out.println("Masukkan jumlah kabel LCD: ");
-            super.jumlahLCD=in.nextInt();
+            this.jumlahLCD=in.nextInt();
             System.out.println("Masukkan kondisi kabel LCD: ");
             System.out.println("1.Berfungsi");
             System.out.println("2.Tidak berfungsi");
-            super.kondisiLCD=in.nextInt();
+            this.kondisiLCD=in.nextInt();
             System.out.println("Masukkan posisi kabel LCD: ");
             System.out.println("1.Dekat dosen");
             System.out.println("2.Lain");
-            super.posisiLCD=in.nextInt();
+            this.posisiLCD=in.nextInt();
             System.out.println("Masukkan jumlah dan kondisi lampu: ");
-            super.jumlahlampu=in.nextInt();
+            this.jumlahlampu=in.nextInt();
             System.out.println("Masukkan posisi lampu: ");
             System.out.println("1.Atap ruangan");
             System.out.println("2.Lain");
-            super.posisilampu=in.nextInt();
+            this.posisilampu=in.nextInt();
             System.out.println("Masukkan jumlah dan kondisi kipas angin: ");
-            super.jumlahkipas=in.nextInt();
+            this.jumlahkipas=in.nextInt();
             System.out.println("Masukkan posisi kipas angin: ");
             System.out.println("1.Atap ruangan");
             System.out.println("2.Lain");
-            super.posisikipas=in.nextInt();
+            this.posisikipas=in.nextInt();
             System.out.println("Masukkan jumlah dan kondisi AC: ");
-            super.jumlahAC=in.nextInt();
+            this.jumlahAC=in.nextInt();
             System.out.println("Masukkan posisi AC: ");
             System.out.println("1.Belakang/Samping");
             System.out.println("2.Lain");
-            super.posisiAC=in.nextInt();
+            this.posisiAC=in.nextInt();
             System.out.println("Pilih SSID: ");
             System.out.println("1.UMM hotspot");
             System.out.println("2.Lain");
-            super.SSID=in.nextInt();
+            this.SSID=in.nextInt();
             System.out.println("Masukkan bandwidth: ");
             System.out.println("1.Bisa login");
             System.out.println("2.Tidak bisa login");
-            super.bandwidth=in.nextInt();
+            this.bandwidth=in.nextInt();
             System.out.println("Masukkan jumlah dan kondisi CCTV: ");
-            super.jumlahCCTV=in.nextInt();
+            this.jumlahCCTV=in.nextInt();
             System.out.println("Masukkan posisi CCTV: ");
             System.out.println("1.Depan");
             System.out.println("2.Belakang");
-            super.posisiCCTV=in.nextInt();
+            this.posisiCCTV=in.nextInt();
             
               
            // InputLingkunganKelas
@@ -116,13 +108,13 @@ public class input extends RuangKelas{
             System.out.println("Masukkan sirkulasi udara: ");
             System.out.println("1.Lancar");
             System.out.println("2.Tidak lancar");
-            super.sirkulasiudara=in.nextInt();
+            this.sirkulasiudara=in.nextInt();
             System.out.println("Masukkan nilai pencahayaan: ");
-            super.pencahayaan=in.nextInt();
+            this.pencahayaan=in.nextInt();
             System.out.println("Masukkan kelembapan(%): ");
-            super.kelembapan=in.nextInt();
+            this.kelembapan=in.nextInt();
             System.out.println("Masukkan suhu(celcius): ");
-            super.suhu=in.nextInt();
+            this.suhu=in.nextInt();
             
             //InputKenyamananKelas
            int s,y,z,a,b;

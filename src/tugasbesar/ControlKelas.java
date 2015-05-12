@@ -1,7 +1,6 @@
 package tugasbesar;
 
 public class ControlKelas extends RuangKelas {
-   
     
      //method-method analisis
     double hitungluas(){
@@ -329,3 +328,4 @@ public class ControlKelas extends RuangKelas {
         }
         return KeamananRuang;
     }
+}

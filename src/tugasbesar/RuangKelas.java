@@ -1,36 +1,36 @@
 package tugasbesar;
 
 public abstract class RuangKelas {
-   private String namaruang;
-   private String lokasiruang;
-   private String namafakultas;
-   private double panjang;
-   private double lebar;
-   private double jumlahkursi;
-   private double jumlahjendela;
-   private double jumlahpintu;
-   private double luas;
-   private double rasio;
-   private int jumlahstopkontak;
-   private int kondisistopkontak;
-   private int posisistopkontak;
-   private int jumlahLCD;
-   private int kondisiLCD;
-   private int posisiLCD;
-   private int jumlahlampu;
-   private int posisilampu;
-   private int jumlahkipas;
-   private int posisikipas;
-   private int jumlahAC;
-   private int posisiAC;
-   private int SSID;
-   private int bandwidth;
-   private int jumlahCCTV;
-   private int posisiCCTV;
-   private int sirkulasiudara;
-   private int pencahayaan;
-   private int kelembapan;
-   private int suhu;
+   String namaruang;
+   String lokasiruang;
+   String namafakultas;
+   double panjang;
+   double lebar;
+   double jumlahkursi;
+   double jumlahjendela;
+   double jumlahpintu;
+   double luas;
+   double rasio;
+   int jumlahstopkontak;
+   int kondisistopkontak;
+   int posisistopkontak;
+   int jumlahLCD;
+   int kondisiLCD;
+   int posisiLCD;
+   int jumlahlampu;
+   int posisilampu;
+   int jumlahkipas;
+   int posisikipas;
+   int jumlahAC;
+   int posisiAC;
+   int SSID;
+   int bandwidth;
+   int jumlahCCTV;
+   int posisiCCTV;
+   int sirkulasiudara;
+   int pencahayaan;
+   int kelembapan;
+   int suhu;
    
    public RuangKelas (String namaruang,String lokasiruang,String namafakultas,
            double panjang,double lebar,double jumlahkursi,double jumlahjendela,

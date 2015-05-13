@@ -1,6 +1,11 @@
 package tugasbesar;
 
-public class ControlKelas extends RuangKelas {
+abstract public class ControlKelas extends RuangKelas implements Kelas {
+
+    public ControlKelas(String namaruang, String lokasiruang, String namafakultas, double panjang, double lebar, double jumlahkursi, double jumlahjendela, double jumlahpintu, double luas, double rasio, int jumlahstopkontak, int kondisistopkontak, int posisistopkontak, int jumlahLCD, int kondisiLCD, int posisiLCD, int jumlahlampu, int posisilampu, int jumlahkipas, int posisikipas, int jumlahAC, int posisiAC, int SSID, int bandwidth, int jumlahCCTV, int posisiCCTV, int sirkulasiudara, int pencahayaan, int kelembapan, int suhu) {
+        super(namaruang, lokasiruang, namafakultas, panjang, lebar, jumlahkursi, jumlahjendela, jumlahpintu, luas, rasio, jumlahstopkontak, kondisistopkontak, posisistopkontak, jumlahLCD, kondisiLCD, posisiLCD, jumlahlampu, posisilampu, jumlahkipas, posisikipas, jumlahAC, posisiAC, SSID, bandwidth, jumlahCCTV, posisiCCTV, sirkulasiudara, pencahayaan, kelembapan, suhu);
+    }
+   
     
      //method-method analisis
     double hitungluas(){
@@ -50,15 +55,14 @@ public class ControlKelas extends RuangKelas {
         return AnalisisPintudanJendela;
     }
  
-    
-    double JumlahStopkontak(double JumlahStopkontak){
-        if (jumlahstopkontak>=4){
-            System.out.println("SESUAI");
-        }else{
-            System.out.println("TIDAK SESUAI");
-        }
-        return JumlahStopkontak;
-    }
+//    double JumlahStopkontak(double JumlahStopkontak){
+//        if (jumlahstopkontak>=4){
+//            System.out.println("SESUAI");
+//        }else{
+//            System.out.println("TIDAK SESUAI");
+//        }
+//        return JumlahStopkontak;
+//    }
         
         double KondisiStopkontak(double KondisiStopkontak){
         if(kondisistopkontak==4){
@@ -78,14 +82,14 @@ public class ControlKelas extends RuangKelas {
         return PosisiStopkontak;
     }
     
-    double JumlahLCD(double JumlahLCD){
-        if (jumlahLCD>=1){
-            System.out.println("SESUAI");
-        }else{
-            System.out.println("TIDAK SESUAI");
-        }
-        return JumlahLCD;
-    }
+//    double JumlahLCD(double JumlahLCD){
+//        if (jumlahLCD>=1){
+//            System.out.println("SESUAI");
+//        }else{
+//            System.out.println("TIDAK SESUAI");
+//        }
+//        return JumlahLCD;
+//    }
     
     double KondisiLCD(double KondisiLCD){
         if(kondisiLCD==1){
@@ -105,14 +109,14 @@ public class ControlKelas extends RuangKelas {
         return PosisiLCD;
     }
     
-    double JumlahLampu(double JumlahLampu){
-        if (jumlahlampu>=8){
-            System.out.println("SESUAI");
-        }else{
-            System.out.println("TIDAK SESUAI");
-        }
-        return JumlahLampu;
-    }
+//    double JumlahLampu(double JumlahLampu){
+//        if (jumlahlampu>=8){
+//            System.out.println("SESUAI");
+//        }else{
+//            System.out.println("TIDAK SESUAI");
+//        }
+//        return JumlahLampu;
+//    }
     
     double PosisiLampu(double PosisiLampu){
         if(posisilampu==1){
@@ -123,14 +127,14 @@ public class ControlKelas extends RuangKelas {
         return PosisiLampu;
     }
     
-    double JumlahKipas(double JumlahKipas){
-        if (jumlahkipas>=2){
-            System.out.println("SESUAI");
-        }else{
-            System.out.println("TIDAK SESUAI");
-        }
-        return JumlahKipas;
-    }
+//    double JumlahKipas(double JumlahKipas){
+//        if (jumlahkipas>=2){
+//            System.out.println("SESUAI");
+//        }else{
+//            System.out.println("TIDAK SESUAI");
+//        }
+//        return JumlahKipas;
+//    }
     
     double PosisiKipas(double PosisiKipas){
         if(posisikipas==1){
@@ -141,14 +145,14 @@ public class ControlKelas extends RuangKelas {
         return PosisiKipas;
     }
     
-    double JumlahAC(double JumlahAC){
-        if (jumlahAC>=1){
-            System.out.println("SESUAI");
-        }else{
-            System.out.println("TIDAK SESUAI");
-        }
-        return JumlahAC;
-    }
+//    double JumlahAC(double JumlahAC){
+//        if (jumlahAC>=1){
+//            System.out.println("SESUAI");
+//        }else{
+//            System.out.println("TIDAK SESUAI");
+//        }
+//        return JumlahAC;
+//    }
     
         double PosisiAC(double PosisiAC){
         if(posisiAC==1){
@@ -176,14 +180,14 @@ public class ControlKelas extends RuangKelas {
         return InternetBandwidth;
     }
         
-    double JumlahCCTV(double JumlahCCTV){
-        if (jumlahCCTV>=2){
-                System.out.println("SESUAI");
-            }else{
-                System.out.println("TIDAK SESUAI");
-            }
-        return JumlahCCTV;
-    }
+//    double JumlahCCTV(double JumlahCCTV){
+//        if (jumlahCCTV>=2){
+//                System.out.println("SESUAI");
+//            }else{
+//                System.out.println("TIDAK SESUAI");
+//            }
+//        return JumlahCCTV;
+//    }
     
     double PosisiCCTV(double PosisiCCTV){
             if(posisiCCTV==1 && posisiCCTV==2){
@@ -327,5 +331,77 @@ public class ControlKelas extends RuangKelas {
             System.out.println("SESUAI");
         }
         return KeamananRuang;
+    }
+
+    //@Override
+    //public void cetak() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    //}
+
+    @Override
+    public int Jumlahstopkontak(int Jumlahstopkontak) {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //this.jumlahstopkontak = jumlahstopkontak;
+        if (jumlahstopkontak>=4){
+            System.out.println("SESUAI");
+        }else{
+            System.out.println("TIDAK SESUAI");
+        }
+        return Jumlahstopkontak;
+    }
+
+    @Override
+    public int JumlahLCD(int JumlahLCD) {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    if (jumlahLCD>=1){
+            System.out.println("SESUAI");
+        }else{
+            System.out.println("TIDAK SESUAI");
+        }
+        return JumlahLCD;
+    }
+
+    @Override
+    public int Jumlahlampu(int Jumlahlampu) {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    if (jumlahlampu>=8){
+            System.out.println("SESUAI");
+        }else{
+            System.out.println("TIDAK SESUAI");
+        }
+        return Jumlahlampu;
+    }
+
+    @Override
+    public int Jumlahkipas(int Jumlahkipas) {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+     if (jumlahkipas>=2){
+            System.out.println("SESUAI");
+        }else{
+            System.out.println("TIDAK SESUAI");
+        }
+        return Jumlahkipas;
+    }
+
+    @Override
+    public int JumlahAC(int JumlahAC) {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    if (jumlahAC>=1){
+            System.out.println("SESUAI");
+        }else{
+            System.out.println("TIDAK SESUAI");
+        }
+        return JumlahAC;
+    }
+
+    @Override
+    public int JumlahCCTV(int JumlahCCTV) {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    if (jumlahCCTV>=2){
+                System.out.println("SESUAI");
+            }else{
+                System.out.println("TIDAK SESUAI");
+            }
+        return JumlahCCTV;
     }
 }

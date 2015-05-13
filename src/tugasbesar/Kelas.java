@@ -9,14 +9,14 @@ package tugasbesar;
  *
  * @author - LENOVO -
  */
-interface Kelas {
+public interface Kelas {
        //abstract method
-    public double jumlahkursi();
-    public int jumlahstopkontak ();
-    public int jumlahLCD();
-    public int jumlahlampu();
-    public int jumlahkipas();
-    public int jumlahAC();
-    public int jumlahCCTV();
+    //public double jumlahkursi(double jumlahkursi);
+    public int Jumlahstopkontak (int jumlahstopkontak);
+    public int JumlahLCD(int jumlahLCD);
+    public int Jumlahlampu(int jumlahlampu);
+    public int Jumlahkipas(int jumlahkipas);
+    public int JumlahAC(int jumlahAC);
+    public int JumlahCCTV(int jumlahCCTV);
     
 }

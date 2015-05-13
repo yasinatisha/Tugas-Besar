@@ -1,15 +1,15 @@
 
 package tugasbesar;
 
- abstract public class TestRuangKelas extends ControlKelas implements Kelas {
-    public static void main(String[] args, double HitungBentukRuang, double HitungRasioLuas, double JumlahStopkontak, double KondisiStopkontak, double PosisiStopkontak, double JumlahAC, double PosisiAC, double JumlahLCD, double KondisiLCD, double PosisiLCD, double JumlahKipas, double PosisiKipas, double JumlahLampu, double PosisiLampu, double JumlahCCTV, double PosisiCCTV, double InternetSSID, double InternetBandwidth) {
+ abstract public class TestRuangKelas extends ControlKelas {
+    public static void main(String[] args, double HitungBentukRuang, double HitungRasioLuas, double JumlahStopkontak, double KondisiStopkontak, double PosisiStopkontak, int JumlahAC, double PosisiAC, int JumlahLCD, double KondisiLCD, double PosisiLCD, int Jumlahkipas, double PosisiKipas, int Jumlahlampu, double PosisiLampu, int JumlahCCTV, double PosisiCCTV, double InternetSSID, double InternetBandwidth, int Jumlahstopkontak) {
         ControlKelas adm = new ControlKelas() {};
 
         adm.hitungluas();
         adm.hitungrasio();
         adm.HitungBentukRuang(HitungBentukRuang);
         adm.HitungRasioLuas(HitungRasioLuas);
-        adm.JumlahStopkontak(JumlahStopkontak);
+        adm.Jumlahstopkontak(Jumlahstopkontak);
         adm.KondisiStopkontak(KondisiStopkontak);
         adm.PosisiStopkontak(PosisiStopkontak);
         adm.JumlahAC(JumlahAC);
@@ -17,9 +17,9 @@ package tugasbesar;
         adm.JumlahLCD(JumlahLCD);
         adm.KondisiLCD(KondisiLCD);
         adm.PosisiLCD(PosisiLCD);
-        adm.JumlahKipas(JumlahKipas);
+        adm.Jumlahkipas(Jumlahkipas);
         adm.PosisiKipas(PosisiKipas);
-        adm.JumlahLampu(JumlahLampu);
+        adm.Jumlahlampu(Jumlahlampu);
         adm.PosisiLampu(PosisiLampu);
         adm.JumlahCCTV(JumlahCCTV);
         adm.PosisiCCTV(PosisiCCTV);

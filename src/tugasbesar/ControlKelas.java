@@ -6,6 +6,11 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
         super(namaruang, lokasiruang, namafakultas, panjang, lebar, jumlahkursi, jumlahjendela, jumlahpintu, luas, rasio, jumlahstopkontak, kondisistopkontak, posisistopkontak, jumlahLCD, kondisiLCD, posisiLCD, jumlahlampu, posisilampu, jumlahkipas, posisikipas, jumlahAC, posisiAC, SSID, bandwidth, jumlahCCTV, posisiCCTV, sirkulasiudara, pencahayaan, kelembapan, suhu);
     }
    
+    //    input i = new input();
+//    i.inputkelas;
+//    Ruangkelas k = new RuangKelas();
+//    k = i.getRuangKelas();
+    
     
      //method-method analisis
     double hitungluas(){
@@ -332,11 +337,6 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
         }
         return KeamananRuang;
     }
-
-    //@Override
-    //public void cetak() {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    //}
 
     @Override
     public int Jumlahstopkontak(int Jumlahstopkontak) {

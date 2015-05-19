@@ -2,9 +2,9 @@
 package tugasbesar;
 
  abstract public class TestRuangKelas extends ControlKelas {
+    @SuppressWarnings("empty-statement")
     public static void main(String[] args, double HitungBentukRuang, double HitungRasioLuas, double JumlahStopkontak, double KondisiStopkontak, double PosisiStopkontak, int JumlahAC, double PosisiAC, int JumlahLCD, double KondisiLCD, double PosisiLCD, int Jumlahkipas, double PosisiKipas, int Jumlahlampu, double PosisiLampu, int JumlahCCTV, double PosisiCCTV, double InternetSSID, double InternetBandwidth, int Jumlahstopkontak) {
         ControlKelas adm = new ControlKelas() {};
-
         adm.hitungluas();
         adm.hitungrasio();
         adm.HitungBentukRuang(HitungBentukRuang);

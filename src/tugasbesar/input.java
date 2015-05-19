@@ -12,7 +12,7 @@ package tugasbesar;
  */
 import java.util.Scanner;
 public class input extends RuangKelas{    
-
+//RuangKelas k;
     public input(String namaruang, String lokasiruang, String namafakultas, double panjang, double lebar, double jumlahkursi, double jumlahjendela, double jumlahpintu, double luas, double rasio, int jumlahstopkontak, int kondisistopkontak, int posisistopkontak, int jumlahLCD, int kondisiLCD, int posisiLCD, int jumlahlampu, int posisilampu, int jumlahkipas, int posisikipas, int jumlahAC, int posisiAC, int SSID, int bandwidth, int jumlahCCTV, int posisiCCTV, int sirkulasiudara, int pencahayaan, int kelembapan, int suhu) {
         super(namaruang, lokasiruang, namafakultas, panjang, lebar, jumlahkursi, jumlahjendela, jumlahpintu, luas, rasio, jumlahstopkontak, kondisistopkontak, posisistopkontak, jumlahLCD, kondisiLCD, posisiLCD, jumlahlampu, posisilampu, jumlahkipas, posisikipas, jumlahAC, posisiAC, SSID, bandwidth, jumlahCCTV, posisiCCTV, sirkulasiudara, pencahayaan, kelembapan, suhu);
     }
@@ -155,6 +155,17 @@ public class input extends RuangKelas{
             e = in.nextInt(); 
     }
     
+    //mengembalikan nilai method
+//    k = new RuangKelas (namaruang,lokasiruang,namafakultas,panjang,lebar,jumlahkursi,jumlahjendela,
+//           jumlahpintu,luas, rasio,jumlahstopkontak,kondisistopkontak,
+//           posisistopkontak,jumlahLCD,kondisiLCD,posisiLCD,
+//           jumlahlampu,posisilampu,jumlahkipas,
+//           posisikipas,jumlahAC,posisiAC,SSID,bandwidth,
+//           jumlahCCTV,posisiCCTV,sirkulasiudara,pencahayaan,kelembapan,suhu);
+//    
+//    public RuangKelas getRuangKelas(){
+//    return k;
+//    }
     
     
     @Override

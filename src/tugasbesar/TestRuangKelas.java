@@ -4,8 +4,8 @@ package tugasbesar;
  abstract public class TestRuangKelas extends ControlKelas {
    public void main(String[] args, double HitungBentukRuang, double HitungRasioLuas, double JumlahStopkontak, double KondisiStopkontak, double PosisiStopkontak, int JumlahAC, double PosisiAC, int JumlahLCD, double KondisiLCD, double PosisiLCD, int Jumlahkipas, double PosisiKipas, int Jumlahlampu, double PosisiLampu, int JumlahCCTV, double PosisiCCTV, double InternetSSID, double InternetBandwidth, int Jumlahstopkontak) {
         //controlKelas adm = new ControlKelas();
-        double luas = super.hitungluas();
-        double rasio= super.hitungrasio();
+        luas = super.hitungluas();
+        rasio= super.hitungrasio();
         super.HitungBentukRuang(HitungBentukRuang);
         super.HitungRasioLuas(HitungRasioLuas);
         super.Jumlahstopkontak(Jumlahstopkontak);

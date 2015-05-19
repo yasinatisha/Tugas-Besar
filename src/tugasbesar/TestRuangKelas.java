@@ -2,41 +2,41 @@
 package tugasbesar;
 
  abstract public class TestRuangKelas extends ControlKelas {
-    public static void main(String[] args, double HitungBentukRuang, double HitungRasioLuas, double JumlahStopkontak, double KondisiStopkontak, double PosisiStopkontak, int JumlahAC, double PosisiAC, int JumlahLCD, double KondisiLCD, double PosisiLCD, int Jumlahkipas, double PosisiKipas, int Jumlahlampu, double PosisiLampu, int JumlahCCTV, double PosisiCCTV, double InternetSSID, double InternetBandwidth, int Jumlahstopkontak) {
-        ControlKelas adm = new ControlKelas();
-        adm.hitungluas();
-        adm.hitungrasio();
-        adm.HitungBentukRuang(HitungBentukRuang);
-        adm.HitungRasioLuas(HitungRasioLuas);
-        adm.Jumlahstopkontak(Jumlahstopkontak);
-        adm.KondisiStopkontak(KondisiStopkontak);
-        adm.PosisiStopkontak(PosisiStopkontak);
-        adm.JumlahAC(JumlahAC);
-        adm.PosisiAC(PosisiAC);
-        adm.JumlahLCD(JumlahLCD);
-        adm.KondisiLCD(KondisiLCD);
-        adm.PosisiLCD(PosisiLCD);
-        adm.Jumlahkipas(Jumlahkipas);
-        adm.PosisiKipas(PosisiKipas);
-        adm.Jumlahlampu(Jumlahlampu);
-        adm.PosisiLampu(PosisiLampu);
-        adm.JumlahCCTV(JumlahCCTV);
-        adm.PosisiCCTV(PosisiCCTV);
-        adm.InternetSSID(InternetSSID);
-        adm.InternetBandwidth(InternetBandwidth);
-        adm.AnalisisKebersihan(HitungBentukRuang);
-        adm.AnalisisSirkulasiUdara(HitungBentukRuang);
-        adm.AnalisisPencahayaan(HitungBentukRuang);
-        adm.AnalisisKelembapan(HitungBentukRuang);
-        adm.AnalisisSuhu(HitungBentukRuang);
-        adm.Kebisingan(HitungBentukRuang);
-        adm.Bau(HitungBentukRuang);
-        adm.Kebocoran(HitungBentukRuang);
-        adm.Kerusakan(HitungBentukRuang);
-        adm.Keausan(HitungBentukRuang);
-        adm.Kekokohan(HitungBentukRuang);
-        adm.KunciPintudanJendela(HitungBentukRuang);
-        adm.KeamananRuang(HitungBentukRuang);
+    void main(String[] args, double HitungBentukRuang, double HitungRasioLuas, double JumlahStopkontak, double KondisiStopkontak, double PosisiStopkontak, int JumlahAC, double PosisiAC, int JumlahLCD, double KondisiLCD, double PosisiLCD, int Jumlahkipas, double PosisiKipas, int Jumlahlampu, double PosisiLampu, int JumlahCCTV, double PosisiCCTV, double InternetSSID, double InternetBandwidth, int Jumlahstopkontak) {
+        //controlKelas adm = new ControlKelas();
+        double luas = super.hitungluas();
+        double rasio= super.hitungrasio();
+        super.HitungBentukRuang(HitungBentukRuang);
+        super.HitungRasioLuas(HitungRasioLuas);
+        super.Jumlahstopkontak(Jumlahstopkontak);
+        super.KondisiStopkontak(KondisiStopkontak);
+        super.PosisiStopkontak(PosisiStopkontak);
+        super.JumlahAC(JumlahAC);
+        super.PosisiAC(PosisiAC);
+        super.JumlahLCD(JumlahLCD);
+        super.KondisiLCD(KondisiLCD);
+        super.PosisiLCD(PosisiLCD);
+        super.Jumlahkipas(Jumlahkipas);
+        super.PosisiKipas(PosisiKipas);
+        super.Jumlahlampu(Jumlahlampu);
+        super.PosisiLampu(PosisiLampu);
+        super.JumlahCCTV(JumlahCCTV);
+        super.PosisiCCTV(PosisiCCTV);
+        super.InternetSSID(InternetSSID);
+        super.InternetBandwidth(InternetBandwidth);
+        super.AnalisisKebersihan(HitungBentukRuang);
+        super.AnalisisSirkulasiUdara(HitungBentukRuang);
+        super.AnalisisPencahayaan(HitungBentukRuang);
+        super.AnalisisKelembapan(HitungBentukRuang);
+        super.AnalisisSuhu(HitungBentukRuang);
+        super.Kebisingan(HitungBentukRuang);
+        super.Bau(HitungBentukRuang);
+        super.Kebocoran(HitungBentukRuang);
+        super.Kerusakan(HitungBentukRuang);
+        super.Keausan(HitungBentukRuang);
+        super.Kekokohan(HitungBentukRuang);
+        super.KunciPintudanJendela(HitungBentukRuang);
+        super.KeamananRuang(HitungBentukRuang);
     }
 
     public TestRuangKelas(String namaruang, String lokasiruang, String namafakultas, double panjang, double lebar, double jumlahkursi, double jumlahjendela, double jumlahpintu, double luas, double rasio, int jumlahstopkontak, int kondisistopkontak, int posisistopkontak, int jumlahLCD, int kondisiLCD, int posisiLCD, int jumlahlampu, int posisilampu, int jumlahkipas, int posisikipas, int jumlahAC, int posisiAC, int SSID, int bandwidth, int jumlahCCTV, int posisiCCTV, int sirkulasiudara, int pencahayaan, int kelembapan, int suhu) {

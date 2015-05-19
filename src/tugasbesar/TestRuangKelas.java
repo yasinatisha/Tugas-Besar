@@ -2,7 +2,6 @@
 package tugasbesar;
 
  abstract public class TestRuangKelas extends ControlKelas {
-    @SuppressWarnings("empty-statement")
     public static void main(String[] args, double HitungBentukRuang, double HitungRasioLuas, double JumlahStopkontak, double KondisiStopkontak, double PosisiStopkontak, int JumlahAC, double PosisiAC, int JumlahLCD, double KondisiLCD, double PosisiLCD, int Jumlahkipas, double PosisiKipas, int Jumlahlampu, double PosisiLampu, int JumlahCCTV, double PosisiCCTV, double InternetSSID, double InternetBandwidth, int Jumlahstopkontak) {
         ControlKelas adm = new ControlKelas() {};
         adm.hitungluas();
@@ -61,17 +60,6 @@ package tugasbesar;
 //
 //        public ControlKelasImpl() {
 //            super();
-//        }
-
-//        @Override
-//        public void cetak() {
-//            System.out.println(":::::::::::::::::::::::::::::::::::::::::::::");
-//            System.out.println("Nama ruang: " + getNamaruang());
-//            System.out.println("Lokasi ruang: " + getLokasiruang());
-//            System.out.println("Fakultas: " + getNamafakultas());
-//            System.out.println("Luas= " + luas);
-//            System.out.println("Rasio luas= " + rasio);
-//            System.out.println(":::::::::::::::::::::::::::::::::::::::::::::");
 //        }
     }
 

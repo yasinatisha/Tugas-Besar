@@ -19,7 +19,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     }
     
     double HitungBentukRuang(double HitungBentukRuang){
-        if(panjang != luas){
+        if(this.getPanjang() != this.getLuas()){
             System.out.println("persegi panjang");
             System.out.println("SESUAI");
         }else{
@@ -29,7 +29,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     }
     
     double HitungRasioLuas(double HitungRasioLuas){
-        if (rasio>=2){
+        if (this.getRasio()>=2){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -38,7 +38,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     }
     
     double AnalisisPintu(double AnalisisPintu){
-        if(jumlahpintu>=2){
+        if(this.getJumlahpintu()>=2){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -47,7 +47,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     }
     
         double AnalisisJendela(double AnalisisPintudanJendela){
-        if (jumlahjendela>=1){
+        if (this.getJumlahjendela()>=1){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -55,17 +55,8 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
         return AnalisisPintudanJendela;
     }
  
-//    double JumlahStopkontak(double JumlahStopkontak){
-//        if (jumlahstopkontak>=4){
-//            System.out.println("SESUAI");
-//        }else{
-//            System.out.println("TIDAK SESUAI");
-//        }
-//        return JumlahStopkontak;
-//    }
-        
         double KondisiStopkontak(double KondisiStopkontak){
-        if(kondisistopkontak==4){
+        if(this.getKondisistopkontak()==4){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -74,7 +65,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     }
     
         double PosisiStopkontak(double PosisiStopkontak){
-        if(posisistopkontak==1 && posisistopkontak==2){
+        if(this.getKondisistopkontak()==1 && this.getPosisistopkontak()==2){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -82,17 +73,8 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
         return PosisiStopkontak;
     }
     
-//    double JumlahLCD(double JumlahLCD){
-//        if (jumlahLCD>=1){
-//            System.out.println("SESUAI");
-//        }else{
-//            System.out.println("TIDAK SESUAI");
-//        }
-//        return JumlahLCD;
-//    }
-    
     double KondisiLCD(double KondisiLCD){
-        if(kondisiLCD==1){
+        if(this.getKondisiLCD()==1){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -101,7 +83,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     }
     
     double PosisiLCD(double PosisiLCD){
-        if(posisiLCD==1){
+        if(this.getPosisiLCD()==1){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -109,17 +91,8 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
         return PosisiLCD;
     }
     
-//    double JumlahLampu(double JumlahLampu){
-//        if (jumlahlampu>=8){
-//            System.out.println("SESUAI");
-//        }else{
-//            System.out.println("TIDAK SESUAI");
-//        }
-//        return JumlahLampu;
-//    }
-    
     double PosisiLampu(double PosisiLampu){
-        if(posisilampu==1){
+        if(this.getPosisilampu()==1){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -127,17 +100,8 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
         return PosisiLampu;
     }
     
-//    double JumlahKipas(double JumlahKipas){
-//        if (jumlahkipas>=2){
-//            System.out.println("SESUAI");
-//        }else{
-//            System.out.println("TIDAK SESUAI");
-//        }
-//        return JumlahKipas;
-//    }
-    
     double PosisiKipas(double PosisiKipas){
-        if(posisikipas==1){
+        if(this.getPosisikipas()==1){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -145,17 +109,8 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
         return PosisiKipas;
     }
     
-//    double JumlahAC(double JumlahAC){
-//        if (jumlahAC>=1){
-//            System.out.println("SESUAI");
-//        }else{
-//            System.out.println("TIDAK SESUAI");
-//        }
-//        return JumlahAC;
-//    }
-    
         double PosisiAC(double PosisiAC){
-        if(posisiAC==1){
+        if(this.getPosisiAC()==1){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -164,7 +119,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     }
     
     double InternetSSID(double InternetSSID){
-        if (SSID==1){
+        if (this.getSSID()==1){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -172,7 +127,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
         return InternetSSID;
     }
     double InternetBandwidth(double InternetBandwidth){
-        if(bandwidth==1){
+        if(this.getBandwidth()==1){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -180,17 +135,8 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
         return InternetBandwidth;
     }
         
-//    double JumlahCCTV(double JumlahCCTV){
-//        if (jumlahCCTV>=2){
-//                System.out.println("SESUAI");
-//            }else{
-//                System.out.println("TIDAK SESUAI");
-//            }
-//        return JumlahCCTV;
-//    }
-    
     double PosisiCCTV(double PosisiCCTV){
-            if(posisiCCTV==1 && posisiCCTV==2){
+            if(this.getPosisiCCTV()==1 && this.getPosisiCCTV()==2){
                 System.out.println("SESUAI");
             }else{
                 System.out.println("TIDAK SESUAI");
@@ -210,7 +156,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     }
         
     double AnalisisSirkulasiUdara(double AnalisisSirkulasiUdara){
-        if (sirkulasiudara==1){
+        if (this.getSirkulasiudara()==1){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -219,7 +165,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     }
         
     double AnalisisPencahayaan(double AnalisisPencahayaan){
-        if (pencahayaan>=250 && pencahayaan<=350){
+        if (this.getPencahayaan()>=250 && this.getPencahayaan()<=350){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -228,7 +174,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     }
         
     double AnalisisKelembapan(double AnalisisKelembapan){
-        if (kelembapan>=70 && kelembapan<=80){
+        if (this.getKelembapan()>=70 && this.getKelembapan()<=80){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -237,7 +183,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     }
         
     double AnalisisSuhu(double AnalisisSuhu){
-        if (suhu>=25 && suhu<=35){
+        if (this.getSuhu()>=25 && this.getSuhu()<=35){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -333,16 +279,11 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
         return KeamananRuang;
     }
 
-    //@Override
-    //public void cetak() {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    //}
-
     @Override
     public int Jumlahstopkontak(int Jumlahstopkontak) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         //this.jumlahstopkontak = jumlahstopkontak;
-        if (jumlahstopkontak>=4){
+        if (this.getJumlahstopkontak()>=4){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -353,7 +294,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     @Override
     public int JumlahLCD(int JumlahLCD) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    if (jumlahLCD>=1){
+    if (this.getJumlahLCD()>=1){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -364,7 +305,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     @Override
     public int Jumlahlampu(int Jumlahlampu) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    if (jumlahlampu>=8){
+    if (this.getJumlahlampu()>=8){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -375,7 +316,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     @Override
     public int Jumlahkipas(int Jumlahkipas) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-     if (jumlahkipas>=2){
+     if (this.getJumlahkipas()>=2){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -386,7 +327,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     @Override
     public int JumlahAC(int JumlahAC) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    if (jumlahAC>=1){
+    if (this.getJumlahAC()>=1){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -397,7 +338,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     @Override
     public int JumlahCCTV(int JumlahCCTV) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    if (jumlahCCTV>=2){
+    if (this.getJumlahCCTV()>=2){
                 System.out.println("SESUAI");
             }else{
                 System.out.println("TIDAK SESUAI");

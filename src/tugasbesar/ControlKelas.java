@@ -6,10 +6,10 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
         super(namaruang, lokasiruang, namafakultas, panjang, lebar, jumlahkursi, jumlahjendela, jumlahpintu, luas, rasio, jumlahstopkontak, kondisistopkontak, posisistopkontak, jumlahLCD, kondisiLCD, posisiLCD, jumlahlampu, posisilampu, jumlahkipas, posisikipas, jumlahAC, posisiAC, SSID, bandwidth, jumlahCCTV, posisiCCTV, sirkulasiudara, pencahayaan, kelembapan, suhu);
     }
    
-    //    input i = new input();
-//    i.inputkelas;
-//    Ruangkelas k = new RuangKelas();
-//    k = i.getRuangKelas();
+        input i = new input();
+    i.inputkelas;
+    Ruangkelas k = new RuangKelas();
+    k = i.getRuangKelas();
     
     
      //method-method analisis

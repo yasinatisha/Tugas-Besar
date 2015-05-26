@@ -10,8 +10,8 @@ import java.util.logging.Logger;
 
 public class KONEKSI {
     //Untuk koneksi ke MySQL
-        private String userid ="root";
-        private String password ="";
+        String userid ="root";
+        String password ="";
 
    //silahkan diganti url-nya, tapi tergantung nama databasenya
    //formatnya: “jdbc:tipeDatabase://server:port/namaDatabase”

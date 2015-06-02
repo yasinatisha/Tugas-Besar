@@ -15,7 +15,7 @@ public class KONEKSI {
 
    //silahkan diganti url-nya, tapi tergantung nama databasenya
    //formatnya: “jdbc:tipeDatabase://server:port/namaDatabase”
-        String url = "jdbc:mysql://localhost/inventaris_kelas";
+        String url = "jdbc:mysql://localhost/inventaris";
         public static Connection con; 
 
 public KONEKSI(){
@@ -63,7 +63,7 @@ public static Connection getkoneksi(){
             String url = new String();
             String user = new String();
             String password = new String();
-            url= "jdbc:mysql://localhost/inventaris_kelas";
+            url= "jdbc:mysql://localhost/inventaris";
             user = "root";
             password = "";
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());

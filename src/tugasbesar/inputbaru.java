@@ -377,78 +377,203 @@ tbldelete.setBounds(180,50,95,20);
 setVisible(true);
 }
 
+
 //fungsi tombol
-void AksiReaksi()
-{
-tblinsert.addActionListener(new ActionListener(){
-public void actionPerformed(ActionEvent event)
-{
-if (event.getSource()==tblinsert)
-{
-try
-{
-namaruang=txnamaruang.getText();
-lokasiruang=txlokasiruang.getText();
-namafakultas=txnamafakultas.getText();
+//void AksiReaksi()
+//{
+//tblinsert.addActionListener(new ActionListener(){
+//public void actionPerformed(ActionEvent event)
+//{
+//if (event.getSource()==tblinsert)
+//{
+//try
+//{
+//namaruang=txnamaruang.getText();
+//lokasiruang=txlokasiruang.getText();
+//namafakultas=txnamafakultas.getText();
+//
+//Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+//Connection connection = DriverManager.getConnection("jdbc:odbc:kelas;uid='aziza';pw='aziza'");
+//Statement statement = connection.createStatement();
+//String sql="insert into identitasruangkelas values ('"+namaruang+"','"+lokasiruang+"','"+namafakultas+"');";
+//statement.executeUpdate(sql);
+//statement.close();
+//connection.close();
+//System.out.println("Data telah masuk");
+//txnamaruang.setText("");
+//txnamaruang.setText("");
+//txnamaruang.requestFocus();
+//}
+//catch(Exception e)
+//{
+//System.out.println("Error :"+e);
+//}
+//}
+//}
+//});
+//
+////tombol update
+//tblupdate.addActionListener(new ActionListener()
+//{
+//    public void actionPerformed(ActionEvent event)
+//{
+//if (event.getSource()==tblupdate)
+//{
+//try
+//{
+//namaruang=txnamaruang.getText();
+//lokasiruang=txlokasiruang.getText();
+//namafakultas=txnamafakultas.getText();
+//Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+//Connection connection = DriverManager.getConnection("jdbc:odbc:kelas;uid='aziza';pw='aziza'");
+//Statement statement = connection.createStatement();
+//String sql="update identitasruangkelas set lokasiruang='"+lokasiruang+"',namafakultas='"+namafakultas+"' WHERE namaruang='"+namaruang+"'";
+//statement.executeUpdate(sql);
+//statement.close();
+//connection.close();
+//System.out.println("Data teredit");
+//txnamaruang.setText("");
+//txnamaruang.setText("");
+//txnamaruang.requestFocus();
+//}
+//catch(Exception e)
+//{
+//System.out.println("Error :"+e);
+//}
+//}
+//}
+//});
+//}
 
-Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-Connection connection = DriverManager.getConnection("jdbc:odbc:kelas;uid='aziza';pw='aziza'");
-Statement statement = connection.createStatement();
-String sql="insert into identitasruangkelas values ('"+namaruang+"','"+lokasiruang+"','"+namafakultas+"');";
-statement.executeUpdate(sql);
-statement.close();
-connection.close();
-System.out.println("Data telah masuk");
-txnamaruang.setText("");
-txnamaruang.setText("");
-txnamaruang.requestFocus();
-}
-catch(Exception e)
-{
-System.out.println("Error :"+e);
-}
-}
-}
-});
+//{
+//inputbaru ap=new inputbaru();
+//ap.komponenVisual();
+//ap.AksiReaksi();
+//}
+//}
+//
 
-//tombol update
-tblupdate.addActionListener(new ActionListener()
-{
-    public void actionPerformed(ActionEvent event)
-{
-if (event.getSource()==tblupdate)
-{
-try
-{
-namaruang=txnamaruang.getText();
-lokasiruang=txlokasiruang.getText();
-namafakultas=txnamafakultas.getText();
-Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-Connection connection = DriverManager.getConnection("jdbc:odbc:kelas;uid='aziza';pw='aziza'");
-Statement statement = connection.createStatement();
-String sql="update identitasruangkelas set lokasiruang='"+lokasiruang+"',namafakultas='"+namafakultas+"' WHERE namaruang='"+namaruang+"'";
-statement.executeUpdate(sql);
-statement.close();
-connection.close();
-System.out.println("Data teredit");
-txnamaruang.setText("");
-txnamaruang.setText("");
-txnamaruang.requestFocus();
-}
-catch(Exception e)
-{
-System.out.println("Error :"+e);
-}
-}
-}
-});
-}
-public static void main(String args[])
-{
-inputbaru ap=new inputbaru();
+/*private void simpanActionPerform(java.awt.event.ActionEvent evt){
+    String sql= "INSERT INTO ruangkelas('"+ txnamaruang.getText()+"', '"+ txlokasiruang.getText()+"', '"+ txnamafakultas.getText()+"', '"+ 
+            txpanjang.getText()+"', '"+ txlebar.getText()+"','"+ txjumlahkursi.getText()+"','"+ txjumlahjendela.getText()+"','"+
+            txjumlahpintu.getText()+"','"+ txjumlahstopkontak.getText()+"','"+ txkondisistopkontak.getText()+"','"+ 
+            lblposisistopkontak.getText()+"','"+ txjumlahLCD.getText()+"','"+ lblkondisiLCD.getText()+"','"+ lblposisiLCD.getText()+"','"+
+            txjumlahlampu.getText()+"', '"+ lblposisilampu.getText()+"','"+ txjumlahkipas.getText()+"','"+ lblposisikipas.getText()+"','"+
+            txjumlahAC.getText()+"','"+ lblposisiAC.getText()+"','"+ lblSSID.getText()+"','"+ lblbandhwith.getText()+"','"+ txjumlahCCTV.getText()+"','"+
+            lblposisiCCTV.getText()+"','"+ lblsirkulasiudara.getText()+"','"+ lblpencahayaan.getText()+"','"+ lblkelembapan.getText()+"','"+
+            lblsuhu.getText()+"','"+ lblx.getText()+"','"+ lbls.getText()+"','"+ lbly.getText()+"','"+ lblz.getText()+"','"+ 
+            lbla.getText()+"','"+ lblb.getText()+"','"+ lblc.getText()+"','"+ lbld.getText()+"','"+ lble.getText()+"')";
+    System.out.println(sql);
+    KONEKSI a= new KONEKSI();
+    Statement st = a.getConnection1();
+    
+   try{
+       st.executeUpdate(sql);
+       JOptionPane.showMessageDialog(null, "BERHASIL DITAMBAHKAN");
+   }catch(Exception e){
+       JOptionPane.showMessageDialog(null, "GAGAL");
+   }
+   
+   txnamaruang.setText("");
+   txlokasiruang.setText("");
+   txnamafakultas.setText("");
+   txpanjang.setText("");
+   txlebar.setText("");
+   txjumlahkursi.setText("");
+   txjumlahjendela.setText("");
+   txjumlahpintu.setText("");
+   txjumlahstopkontak.setText("");
+   txkondisistopkontak.setText("");
+   lblposisistopkontak.setText("");
+   txjumlahLCD.setText("");
+   lblkondisiLCD.setText("");
+   lblposisiLCD.setText("");
+   txjumlahlampu.setText("");
+   lblposisilampu.setText("");
+   txjumlahkipas.setText("");
+   lblposisikipas.setText("");
+   txjumlahAC.setText("");
+   lblposisiAC.setText("");
+   lblSSID.setText("");
+   lblbandhwith.setText("");
+   txjumlahCCTV.setText("");
+   lblposisiCCTV.setText("");
+   lblsirkulasiudara.setText("");
+   lblpencahayaan.setText("");
+   lblkelembapan.setText("");
+   lblsuhu.setText("");
+   lblx.setText("");
+   lbls.setText("");
+   lbly.setText("");
+   lblz.setText("");
+   lbla.setText("");
+   lblb.setText("");
+   lblc.setText("");
+   lbld.setText("");
+   lble.setText("");
+}*/
+public static void main(String args[]){
+    inputbaru ap=new inputbaru();
 ap.komponenVisual();
-ap.AksiReaksi();
 }
+ 
+    private void simpanActionPerform(java.awt.event.ActionEvent evt) {
+         String sql= "INSERT INTO ruangkelas('"+ txnamaruang.getText()+"', '"+ txlokasiruang.getText()+"', '"+ txnamafakultas.getText()+"', '"+ 
+            txpanjang.getText()+"', '"+ txlebar.getText()+"','"+ txjumlahkursi.getText()+"','"+ txjumlahjendela.getText()+"','"+
+            txjumlahpintu.getText()+"','"+ txjumlahstopkontak.getText()+"','"+ txkondisistopkontak.getText()+"','"+ 
+            lblposisistopkontak.getText()+"','"+ txjumlahLCD.getText()+"','"+ lblkondisiLCD.getText()+"','"+ lblposisiLCD.getText()+"','"+
+            txjumlahlampu.getText()+"', '"+ lblposisilampu.getText()+"','"+ txjumlahkipas.getText()+"','"+ lblposisikipas.getText()+"','"+
+            txjumlahAC.getText()+"','"+ lblposisiAC.getText()+"','"+ lblSSID.getText()+"','"+ lblbandhwith.getText()+"','"+ txjumlahCCTV.getText()+"','"+
+            lblposisiCCTV.getText()+"','"+ lblsirkulasiudara.getText()+"','"+ lblpencahayaan.getText()+"','"+ lblkelembapan.getText()+"','"+
+            lblsuhu.getText()+"','"+ lblx.getText()+"','"+ lbls.getText()+"','"+ lbly.getText()+"','"+ lblz.getText()+"','"+ 
+            lbla.getText()+"','"+ lblb.getText()+"','"+ lblc.getText()+"','"+ lbld.getText()+"','"+ lble.getText()+"')";
+    System.out.println(sql);
+    KONEKSI a= new KONEKSI();
+    Statement st = a.getConnection1();
+    
+   try{
+       st.executeUpdate(sql);
+       JOptionPane.showMessageDialog(null, "BERHASIL DITAMBAHKAN");
+   }catch(Exception e){
+       JOptionPane.showMessageDialog(null, "GAGAL");
+   }
+   
+   txnamaruang.setText("");
+   txlokasiruang.setText("");
+   txnamafakultas.setText("");
+   txpanjang.setText("");
+   txlebar.setText("");
+   txjumlahkursi.setText("");
+   txjumlahjendela.setText("");
+   txjumlahpintu.setText("");
+   txjumlahstopkontak.setText("");
+   txkondisistopkontak.setText("");
+   lblposisistopkontak.setText("");
+   txjumlahLCD.setText("");
+   lblkondisiLCD.setText("");
+   lblposisiLCD.setText("");
+   txjumlahlampu.setText("");
+   lblposisilampu.setText("");
+   txjumlahkipas.setText("");
+   lblposisikipas.setText("");
+   txjumlahAC.setText("");
+   lblposisiAC.setText("");
+   lblSSID.setText("");
+   lblbandhwith.setText("");
+   txjumlahCCTV.setText("");
+   lblposisiCCTV.setText("");
+   lblsirkulasiudara.setText("");
+   lblpencahayaan.setText("");
+   lblkelembapan.setText("");
+   lblsuhu.setText("");
+   lblx.setText("");
+   lbls.setText("");
+   lbly.setText("");
+   lblz.setText("");
+   lbla.setText("");
+   lblb.setText("");
+   lblc.setText("");
+   lbld.setText("");
+   lble.setText("");
+    }
 }
-
-

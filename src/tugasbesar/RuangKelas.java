@@ -191,6 +191,126 @@ public abstract class RuangKelas {
     public int getSuhu() {
         return suhu;
     }
+
+    public void setNamaruang(String namaruang) {
+        this.namaruang = namaruang;
+    }
+
+    public void setLokasiruang(String lokasiruang) {
+        this.lokasiruang = lokasiruang;
+    }
+
+    public void setNamafakultas(String namafakultas) {
+        this.namafakultas = namafakultas;
+    }
+
+    public void setPanjang(double panjang) {
+        this.panjang = panjang;
+    }
+
+    public void setLebar(double lebar) {
+        this.lebar = lebar;
+    }
+
+    public void setJumlahkursi(double jumlahkursi) {
+        this.jumlahkursi = jumlahkursi;
+    }
+
+    public void setJumlahjendela(double jumlahjendela) {
+        this.jumlahjendela = jumlahjendela;
+    }
+
+    public void setJumlahpintu(double jumlahpintu) {
+        this.jumlahpintu = jumlahpintu;
+    }
+
+    public void setLuas(double luas) {
+        this.luas = luas;
+    }
+
+    public void setRasio(double rasio) {
+        this.rasio = rasio;
+    }
+
+    public void setJumlahstopkontak(int jumlahstopkontak) {
+        this.jumlahstopkontak = jumlahstopkontak;
+    }
+
+    public void setKondisistopkontak(int kondisistopkontak) {
+        this.kondisistopkontak = kondisistopkontak;
+    }
+
+    public void setPosisistopkontak(int posisistopkontak) {
+        this.posisistopkontak = posisistopkontak;
+    }
+
+    public void setJumlahLCD(int jumlahLCD) {
+        this.jumlahLCD = jumlahLCD;
+    }
+
+    public void setKondisiLCD(int kondisiLCD) {
+        this.kondisiLCD = kondisiLCD;
+    }
+
+    public void setPosisiLCD(int posisiLCD) {
+        this.posisiLCD = posisiLCD;
+    }
+
+    public void setJumlahlampu(int jumlahlampu) {
+        this.jumlahlampu = jumlahlampu;
+    }
+
+    public void setPosisilampu(int posisilampu) {
+        this.posisilampu = posisilampu;
+    }
+
+    public void setJumlahkipas(int jumlahkipas) {
+        this.jumlahkipas = jumlahkipas;
+    }
+
+    public void setPosisikipas(int posisikipas) {
+        this.posisikipas = posisikipas;
+    }
+
+    public void setJumlahAC(int jumlahAC) {
+        this.jumlahAC = jumlahAC;
+    }
+
+    public void setPosisiAC(int posisiAC) {
+        this.posisiAC = posisiAC;
+    }
+
+    public void setSSID(int SSID) {
+        this.SSID = SSID;
+    }
+
+    public void setBandwidth(int bandwidth) {
+        this.bandwidth = bandwidth;
+    }
+
+    public void setJumlahCCTV(int jumlahCCTV) {
+        this.jumlahCCTV = jumlahCCTV;
+    }
+
+    public void setPosisiCCTV(int posisiCCTV) {
+        this.posisiCCTV = posisiCCTV;
+    }
+
+    public void setSirkulasiudara(int sirkulasiudara) {
+        this.sirkulasiudara = sirkulasiudara;
+    }
+
+    public void setPencahayaan(int pencahayaan) {
+        this.pencahayaan = pencahayaan;
+    }
+
+    public void setKelembapan(int kelembapan) {
+        this.kelembapan = kelembapan;
+    }
+
+    public void setSuhu(int suhu) {
+        this.suhu = suhu;
+    }
     
     public abstract void cetak() ;
 }

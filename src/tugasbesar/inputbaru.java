@@ -43,29 +43,30 @@ JTextField txkondisistopkontak=new JTextField(20);
 JLabel lblposisistopkontak=new JLabel("Posisi Stopkontak ");
 JRadioButton posisistopkontak1=new JRadioButton("Pojok Ruangan");
 JRadioButton posisistopkontak2=new JRadioButton("Dekat Dosen");
-JLabel lbljumlahLCD=new JLabel("Jumlah Kabel LCD");
+JLabel lbljumlahLCD=new JLabel("Jumlah LCD");
 JTextField txjumlahLCD=new JTextField(20);
-JLabel lblkondisiLCD=new JLabel("Kondisi Kabel LCD");
+JLabel lblkondisiLCD=new JLabel("Kondisi LCD");
 JRadioButton kondisiLCD1=new JRadioButton("Berfungsi");
 JRadioButton kondisiLCD2=new JRadioButton("Tidak Berfungsi");
 JLabel lblposisiLCD=new JLabel("Posisi LCD");
 JRadioButton posisiLCD1=new JRadioButton("Dekat Dosen");
 JRadioButton posisiLCD2=new JRadioButton("Lain");
-JLabel lbljumlahlampu=new JLabel("Jumlah Kabel Lampu");
+JLabel lbljumlahlampu=new JLabel("Jumlah Lampu");
 JTextField txjumlahlampu=new JTextField(20);
-JLabel lblposisilampu=new JLabel("Jumlah Kondisi Lampu");
-JRadioButton posisilampu1=new JRadioButton("Atap Ruanagan");
+JLabel lblposisilampu=new JLabel("Posisi Lampu");
+JRadioButton posisilampu1=new JRadioButton("Atap Ruangan");
 JRadioButton posisilampu2=new JRadioButton("Lain");
 JLabel lbljumlahkipas=new JLabel("Jumlah Kipas Angin");
 JTextField txjumlahkipas=new JTextField(20);
-JLabel lblposisikipas=new JLabel("Jumlah Kondisi Kipas Angin");
+JLabel lblposisikipas=new JLabel("Posisi Kipas Angin");
 JRadioButton posisikipas1=new JRadioButton("Atap Ruangan");
 JRadioButton posisikipas2=new JRadioButton("Lain");
 JLabel lbljumlahAC=new JLabel("Jumlah AC");
 JTextField txjumlahAC=new JTextField(20);
-JLabel lblposisiAC=new JLabel("Jumlah Kondisi AC");
-JRadioButton posisiAC1=new JRadioButton("Belakang / Samping");
-JRadioButton posisiAC2=new JRadioButton("Lain");
+JLabel lblposisiAC=new JLabel("Posisi AC");
+JRadioButton posisiAC1=new JRadioButton("Belakang");
+JRadioButton posisiAC2=new JRadioButton("Samping");
+JRadioButton posisiAC3=new JRadioButton("Lain");
 JLabel lblSSID=new JLabel("Pilih SSID");
 JRadioButton SSID1=new JRadioButton("UMM Hotspot");
 JRadioButton SSID2=new JRadioButton("Lain");
@@ -74,22 +75,37 @@ JRadioButton bandhwith1=new JRadioButton("Bisa Login");
 JRadioButton bandhwith2=new JRadioButton("Tidak Bisa Login");
 JLabel lbljumlahCCTV=new JLabel("Jumlah CCTV");
 JTextField txjumlahCCTV=new JTextField(20);
-JLabel lblposisiCCTV=new JLabel("posisi CCTV");
+JLabel lblposisiCCTV=new JLabel("Posisi CCTV");
 JRadioButton posisiCCTV1=new JRadioButton("Depan");
 JRadioButton posisiCCTV2=new JRadioButton("Belakang");
     
 // InputLingkunganKelas
-JLabel lblx=new JLabel("Kondisi Lantai"+"Kondisi pintu"+"Kondisi jendela"+"Kondisi pintu"+"Kondisi atap"+"Kondisi dinding");
+JLabel lblx=new JLabel("Kondisi Lantai");
 JRadioButton x1=new JRadioButton("Bersih");
 JRadioButton x2=new JRadioButton("Kotor");
+JLabel lblk=new JLabel("Kondisi pintu");
+//JRadioButton k1=new JRadioButton("Bersih");
+//JRadioButton k2=new JRadioButton("Kotor");
+JLabel lbll=new JLabel("Kondisi jendela");
+//JRadioButton l1=new JRadioButton("Bersih");
+//JRadioButton l2=new JRadioButton("Kotor");
+JLabel lblm=new JLabel("Kondisi pintu");
+//JRadioButton m1=new JRadioButton("Bersih");
+//JRadioButton m2=new JRadioButton("Kotor");
+JLabel lbln=new JLabel("Kondisi atap");
+//JRadioButton n1=new JRadioButton("Bersih");
+//JRadioButton n2=new JRadioButton("Kotor");
+JLabel lblo=new JLabel("Kondisi dinding");
+//JRadioButton o1=new JRadioButton("Bersih");
+//JRadioButton o2=new JRadioButton("Kotor");
 
 //InputKebersihanKelas
-JLabel lblsirkulasiudara=new JLabel("Pilih Sirkulasi Udara");
+JLabel lblsirkulasiudara=new JLabel("Sirkulasi Udara");
 JRadioButton sirkulasiudara1=new JRadioButton("Lancar");
 JRadioButton sirkulasiudara2=new JRadioButton("Tidak Lancar");
 JLabel lblpencahayaan=new JLabel("Niali pencahayaan");
 JTextField txpencahayaan=new JTextField(20);
-JLabel lblkelembapan=new JLabel("kelembapan(%):");
+JLabel lblkelembapan=new JLabel("kelembapan(%)");
 JTextField txkelembapan=new JTextField(20);
 JLabel lblsuhu=new JLabel("suhu (celcius)");
 JTextField txsuhu=new JTextField(20);
@@ -145,234 +161,274 @@ getContentPane().setLayout(null);
 
 //InputIndentitasRuangKelas
 getContentPane().add(lblnamaruang);
-lblnamaruang.setBounds(10,10,70,20);
+//(maju,bawah,panjang,bawah/lebar)
+lblnamaruang.setBounds(10,10,120,20);
 getContentPane().add(txnamaruang);
-txnamaruang.setBounds(75,10,100,20);
+txnamaruang.setBounds(130,10,100,20);
 
 getContentPane().add(lbllokasiruang);
-lbllokasiruang.setBounds(10,30,70,20);
+lbllokasiruang.setBounds(10,30,120,20);
 getContentPane().add(txlokasiruang);
-txlokasiruang.setBounds(75,30,100,20);
+txlokasiruang.setBounds(130,30,100,20);
 
 getContentPane().add(lblnamafakultas);
-lblnamafakultas.setBounds(10,50,70,20);
+lblnamafakultas.setBounds(10,50,120,20);
 getContentPane().add(txnamafakultas);
-txnamafakultas.setBounds(75,50,100,20);
+txnamafakultas.setBounds(130,50,100,20);
 
 //InputKondisiRuangKelas
 getContentPane().add(lblpanjang);
-lblpanjang.setBounds(10,70,70,20);
+lblpanjang.setBounds(10,70,120,20);
 getContentPane().add(txpanjang);
-txpanjang.setBounds(75,70,100,20);
+txpanjang.setBounds(130,70,100,20);
 getContentPane().add(lbllebar);
-lbllebar.setBounds(10,90,70,20);
+lbllebar.setBounds(10,90,120,20);
 getContentPane().add(txlebar);
-txlebar.setBounds(75,90,100,20);
+txlebar.setBounds(130,90,100,20);
 getContentPane().add(lbljumlahpintu);
-lbljumlahpintu.setBounds(10,110,70,20);
+lbljumlahpintu.setBounds(10,110,120,20);
 getContentPane().add(txjumlahpintu);
-txjumlahpintu.setBounds(75,110,100,20);
+txjumlahpintu.setBounds(130,110,100,20);
 getContentPane().add(lbljumlahkursi);
-lbljumlahkursi.setBounds(10,130,70,20);
+lbljumlahkursi.setBounds(10,130,120,20);
 getContentPane().add(txjumlahkursi);
-txjumlahkursi.setBounds(75,130,100,20);
+txjumlahkursi.setBounds(130,130,100,20);
 getContentPane().add(lbljumlahjendela);
-lbljumlahjendela.setBounds(10,150,70,20);
+lbljumlahjendela.setBounds(10,150,120,20);
 getContentPane().add(txjumlahjendela);
-txjumlahjendela.setBounds(75,150,100,20);
+txjumlahjendela.setBounds(130,150,100,20);
 
 //InputjumlahKondisiPosisiSarana
 getContentPane().add(lbljumlahstopkontak);
-lbljumlahstopkontak.setBounds(10,170,70,20);
+lbljumlahstopkontak.setBounds(10,170,120,20);
 getContentPane().add(txjumlahstopkontak);
-txjumlahstopkontak.setBounds(75,170,100,20);
+txjumlahstopkontak.setBounds(130,170,100,20);
 
 getContentPane().add(lblkondisistopkontak);
-lblkondisistopkontak.setBounds(10,190,70,20);
+lblkondisistopkontak.setBounds(10,190,120,20);
 getContentPane().add(txkondisistopkontak);
-txkondisistopkontak.setBounds(75,190,100,20);
+txkondisistopkontak.setBounds(130,190,100,20);
 
 getContentPane().add(lblposisistopkontak);
-lblposisistopkontak.setBounds(10,210,70,20);
+lblposisistopkontak.setBounds(10,210,120,20);
 getContentPane().add(posisistopkontak1);
-posisistopkontak1.setBounds(75,210,50,20);
+posisistopkontak1.setBounds(125,200,120,43);
 getContentPane().add(posisistopkontak2);
-posisistopkontak2.setBounds(125,210,50,20);
+posisistopkontak2.setBounds(250,210,100,20);
 
 getContentPane().add(lbljumlahLCD);
-lbljumlahLCD.setBounds(10,230,70,20);
+lbljumlahLCD.setBounds(10,230,90,20);
 getContentPane().add(txjumlahLCD);
-txjumlahLCD.setBounds(75,230,100,20);
+txjumlahLCD.setBounds(130,230,100,20);
 
 getContentPane().add(lblkondisiLCD);
-lblkondisiLCD.setBounds(10,250,70,20);
+lblkondisiLCD.setBounds(10,250,120,20);
 getContentPane().add(kondisiLCD1);
-kondisiLCD1.setBounds(75,250,50,20);
+kondisiLCD1.setBounds(125,250,80,20);
 getContentPane().add(kondisiLCD2);
-kondisiLCD2.setBounds(125,250,50,20);
+kondisiLCD2.setBounds(250,250,120,20);
 
 getContentPane().add(lblposisiLCD);
-lblposisiLCD.setBounds(10,270,70,20);
+lblposisiLCD.setBounds(10,270,120,20);
 getContentPane().add(posisiLCD1);
-posisiLCD1.setBounds(75,270,50,20);
+posisiLCD1.setBounds(125,270,110,20);
 getContentPane().add(posisiLCD2);
-posisiLCD2.setBounds(125,270,50,20);
+posisiLCD2.setBounds(250,270,50,20);
 
 getContentPane().add(lbljumlahlampu);
-lbljumlahlampu.setBounds(10,290,70,20);
+lbljumlahlampu.setBounds(10,290,120,20);
 getContentPane().add(txjumlahlampu);
-txjumlahlampu.setBounds(75,290,100,20);
+txjumlahlampu.setBounds(130,290,100,20);
 
 getContentPane().add(lblposisilampu);
-lblposisilampu.setBounds(10,310,70,20);
+lblposisilampu.setBounds(10,310,120,20);
 getContentPane().add(posisilampu1);
-posisilampu1.setBounds(75,310,50,20);
+posisilampu1.setBounds(125,310,120,20);
 getContentPane().add(posisilampu2);
-posisilampu2.setBounds(125,310,50,20);
+posisilampu2.setBounds(250,310,50,20);
 
 getContentPane().add(lbljumlahkipas);
-lbljumlahkipas.setBounds(10,330,70,20);
+lbljumlahkipas.setBounds(10,330,120,20);
 getContentPane().add(txjumlahkipas);
-txjumlahkipas.setBounds(75,330,100,20);
+txjumlahkipas.setBounds(130,330,100,20);
 
 getContentPane().add(lblposisikipas);
-lblposisikipas.setBounds(10,350,70,20);
+lblposisikipas.setBounds(10,350,120,20);
 getContentPane().add(posisikipas1);
-posisikipas1.setBounds(75,350,50,20);
+posisikipas1.setBounds(125,350,120,20);
 getContentPane().add(posisikipas2);
-posisikipas2.setBounds(125,350,50,20);
+posisikipas2.setBounds(250,350,50,20);
 
 getContentPane().add(lbljumlahAC);
-lbljumlahAC.setBounds(10,370,70,20);
+lbljumlahAC.setBounds(10,370,120,20);
 getContentPane().add(txjumlahAC);
-txjumlahAC.setBounds(75,370,100,20);
+txjumlahAC.setBounds(130,370,100,20);
 
 getContentPane().add(lblposisiAC);
-lblposisiAC.setBounds(10,390,70,20);
+lblposisiAC.setBounds(10,390,120,20);
 getContentPane().add(posisiAC1);
-posisiAC1.setBounds(75,390,50,20);
+posisiAC1.setBounds(125,390,80,20);
 getContentPane().add(posisiAC2);
-posisiAC2.setBounds(125,390,50,20);
+posisiAC2.setBounds(250,390,80,20);
+getContentPane().add(posisiAC3);
+posisiAC3.setBounds(375,390,50,20);
 
 getContentPane().add(lblSSID);
-lblSSID.setBounds(10,410,70,20);
+lblSSID.setBounds(10,410,120,20);
 getContentPane().add(SSID1);
-SSID1.setBounds(75,410,50,20);
+SSID1.setBounds(125,410,110,20);
 getContentPane().add(SSID2);
-SSID2.setBounds(125,410,50,20);
+SSID2.setBounds(250,410,50,20);
 
 getContentPane().add(lblbandhwith);
-lblbandhwith.setBounds(10,430,70,20);
+lblbandhwith.setBounds(10,430,120,20);
 getContentPane().add(bandhwith1);
-bandhwith1.setBounds(75,430,50,20);
+bandhwith1.setBounds(125,430,100,20);
 getContentPane().add(bandhwith2);
-bandhwith2.setBounds(125,430,50,20);
+bandhwith2.setBounds(250,430,120,20);
 
 getContentPane().add(lbljumlahCCTV);
-lbljumlahCCTV.setBounds(10,450,70,20);
+lbljumlahCCTV.setBounds(10,450,120,20);
 getContentPane().add(txjumlahCCTV);
-txjumlahCCTV.setBounds(75,450,100,20);
+txjumlahCCTV.setBounds(130,450,100,20);
 
 getContentPane().add(lblposisiCCTV);
-lblposisiCCTV.setBounds(10,470,70,20);
+lblposisiCCTV.setBounds(10,470,120,20);
 getContentPane().add(posisiCCTV1);
-posisiCCTV1.setBounds(75,470,50,20);
+posisiCCTV1.setBounds(125,470,80,20);
 getContentPane().add(posisiCCTV2);
-posisiCCTV2.setBounds(125,470,50,20);
+posisiCCTV2.setBounds(250,470,90,20);
 
 getContentPane().add(lblx);
-lblx.setBounds(10,490,70,20);
+lblx.setBounds(10,490,120,20);
+
+
+getContentPane().add(lblk);
+lblk.setBounds(10,510,120,20);
+//getContentPane().add(k1);
+//k1.setBounds(125,490,50,20);
+//getContentPane().add(k2);
+//k2.setBounds(250,490,50,20);
+//
+getContentPane().add(lbll);
+lbll.setBounds(10,520,120,20);
+//getContentPane().add(l1);
+//l1.setBounds(125,490,50,20);
+//getContentPane().add(l2);
+//l2.setBounds(250,490,50,20);
+//
+getContentPane().add(lblm);
+lblm.setBounds(10,540,120,20);
+//getContentPane().add(m1);
+//m1.setBounds(125,490,50,20);
+//getContentPane().add(m2);
+//m2.setBounds(250,490,50,20);
+//
+getContentPane().add(lbln);
+lbln.setBounds(10,560,120,20);
+//getContentPane().add(n1);
+//n1.setBounds(125,490,50,20);
+//getContentPane().add(n2);
+//n2.setBounds(250,490,50,20);
+//
+getContentPane().add(lblo);
+lblo.setBounds(10,580,120,20);
+//getContentPane().add(o1);
+//o1.setBounds(125,490,50,20);
+//getContentPane().add(o2);
+//o2.setBounds(250,490,50,20);
+
 getContentPane().add(x1);
-x1.setBounds(75,490,50,20);
+x1.setBounds(125,600,80,20);
 getContentPane().add(x2);
-x2.setBounds(125,490,50,20);
+x2.setBounds(250,600,80,20);
 
 getContentPane().add(lblsirkulasiudara);
-lblsirkulasiudara.setBounds(10,510,70,20);
+lblsirkulasiudara.setBounds(10,500,120,20);
 getContentPane().add(sirkulasiudara1);
-sirkulasiudara1.setBounds(75,510,50,20);
+sirkulasiudara1.setBounds(125,620,80,20);
 getContentPane().add(sirkulasiudara2);
-sirkulasiudara2.setBounds(125,510,50,20);
+sirkulasiudara2.setBounds(250,620,110,40);
 
 getContentPane().add(lblpencahayaan);
-lblpencahayaan.setBounds(10,530,70,20);
+lblpencahayaan.setBounds(10,640,120,20);
 getContentPane().add(txpencahayaan);
-txpencahayaan.setBounds(75,530,100,20);
+txpencahayaan.setBounds(130,640,100,20);
 
 getContentPane().add(lblkelembapan);
-lblkelembapan.setBounds(10,550,70,20);
+lblkelembapan.setBounds(10,660,120,20);
 getContentPane().add(txkelembapan);
-txkelembapan.setBounds(75,550,100,20);
+txkelembapan.setBounds(130,660,100,20);
 
 getContentPane().add(lblsuhu);
-lblsuhu.setBounds(10,570,70,20);
+lblsuhu.setBounds(10,680,90,20);
 getContentPane().add(txsuhu);
-txsuhu.setBounds(75,570,100,20);
+txsuhu.setBounds(130,680,100,20);
 
 //InputKenyamananKelas
 getContentPane().add(lbls);
-lbls.setBounds(10,590,70,20);
+lbls.setBounds(10,700,120,20);
 getContentPane().add(s1);
-s1.setBounds(75,590,50,20);
+s1.setBounds(125,700,50,20);
 getContentPane().add(s2);
-sirkulasiudara2.setBounds(125,590,50,20);
+sirkulasiudara2.setBounds(250,700,50,20);
 
 getContentPane().add(lbly);
-lbly.setBounds(10,610,70,20);
+lbly.setBounds(10,720,120,20);
 getContentPane().add(y1);
-y1.setBounds(75,610,50,20);
+y1.setBounds(125,720,50,20);
 getContentPane().add(y2);
-y2.setBounds(125,610,50,20);
+y2.setBounds(250,720,50,20);
 
 getContentPane().add(lblz);
-lblz.setBounds(10,630,70,20);
+lblz.setBounds(10,740,120,20);
 getContentPane().add(z1);
-z1.setBounds(75,630,50,20);
+z1.setBounds(125,740,50,20);
 getContentPane().add(z2);
-z2.setBounds(125,630,50,20);
+z2.setBounds(250,740,50,20);
 
 getContentPane().add(lbla);
-lblsirkulasiudara.setBounds(10,650,70,20);
+lblsirkulasiudara.setBounds(10,760,120,20);
 getContentPane().add(a1);
-a1.setBounds(75,650,50,20);
+a1.setBounds(125,760,50,20);
 getContentPane().add(a2);
-a2.setBounds(125,650,50,20);
+a2.setBounds(250,760,50,20);
 
 getContentPane().add(lblb);
-lblb.setBounds(10,670,70,20);
+lblb.setBounds(10,790,120,20);
 getContentPane().add(b1);
-b1.setBounds(75,670,50,20);
+b1.setBounds(125,790,50,20);
 getContentPane().add(b2);
-b2.setBounds(125,670,50,20);
+b2.setBounds(250,790,50,20);
 
 //InputKeamananKelas
 getContentPane().add(lblc);
-lblc.setBounds(10,690,70,20);
+lblc.setBounds(10,810,120,20);
 getContentPane().add(c1);
-c1.setBounds(75,690,50,20);
+c1.setBounds(125,810,50,20);
 getContentPane().add(c2);
-c2.setBounds(125,690,50,20);
+c2.setBounds(250,810,50,20);
 
 getContentPane().add(lbld);
-lbld.setBounds(10,710,70,20);
+lbld.setBounds(10,810,120,20);
 getContentPane().add(d1);
-d1.setBounds(75,710,50,20);
+d1.setBounds(125,810,50,20);
 getContentPane().add(d2);
-d2.setBounds(125,710,50,20);
+d2.setBounds(250,810,50,20);
 
 getContentPane().add(lble);
-lble.setBounds(10,730,70,20);
+lble.setBounds(10,830,120,20);
 getContentPane().add(e1);
-e1.setBounds(75,730,50,20);
+e1.setBounds(125,830,50,20);
 getContentPane().add(e2);
-e2.setBounds(125,730,50,20);
+e2.setBounds(250,830,50,20);
 
 getContentPane().add(tblinsert);
-tblinsert.setBounds(180,10,95,20);
+tblinsert.setBounds(240,10,95,20);
 getContentPane().add(tblupdate);
-tblupdate.setBounds(180,30,95,20);
+tblupdate.setBounds(240,30,95,20);
 getContentPane().add(tbldelete);
-tbldelete.setBounds(180,50,95,20);
+tbldelete.setBounds(240,50,95,20);
 
 setVisible(true);
 }

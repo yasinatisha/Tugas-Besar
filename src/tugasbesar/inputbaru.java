@@ -432,8 +432,6 @@ tbldelete.setBounds(240,50,95,20);
 
 setVisible(true);
 }
-
-
 //fungsi tombol
 //void AksiReaksi()
 //{

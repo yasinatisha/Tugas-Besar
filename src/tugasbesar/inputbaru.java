@@ -157,6 +157,9 @@ setVisible(true);
 
 void komponenVisual()
 {
+
+panel.setBounds(10, 11, 493, 350);
+add(panel);
 panel.setLayout(null);
 //panel.setLayout(new FlowLayout());
 

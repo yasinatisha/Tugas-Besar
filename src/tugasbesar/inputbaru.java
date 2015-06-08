@@ -174,7 +174,7 @@ String namafakultas="";
    String suhu="";
  
 inputbaru(){
-setTitle("iki sek nyacak");
+setTitle("INVENTARIS KELAS");
 setLocation(200,100);
 setSize(450,800);
 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

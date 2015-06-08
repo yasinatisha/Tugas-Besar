@@ -145,8 +145,8 @@ JButton tblupdate=new JButton("Update");
 JButton tbldelete=new JButton("Delete");
     
 String namaruang="";
-   String lokasiruang="";
-   String namafakultas="";
+String lokasiruang="";
+String namafakultas="";    
    String panjang="";
    String lebar="";
    String jumlahkursi="";
@@ -167,9 +167,18 @@ String namaruang="";
    String jumlahAC="";
    String posisiAC="";
    String SSID="";
-   String bandwidth="";
+   String bandhwith="";
    String jumlahCCTV="";
    String posisiCCTV="";
+   String x="";
+   String s="";
+   String y="";
+   String z="";
+   String a="";
+   String b="";
+   String c="";
+   String d="";
+   String e="";
    String sirkulasiudara="";
    String pencahayaan="";
    String kelembapan="";
@@ -488,6 +497,125 @@ public void simpanActionPerform(java.awt.event.ActionEvent event) {
     @Override
     public void actionPerformed(ActionEvent event) {
         if (event.getSource()==tblinsert){
+            try{
+                 namaruang=txnamaruang.getText();
+                 lokasiruang=txlokasiruang.getText();
+                 namafakultas=txnamafakultas.getText();
+                 panjang= txpanjang.getText();
+                 lebar=txlebar.getText();
+                 jumlahkursi=txjumlahkursi.getText();
+                 jumlahjendela=txjumlahjendela.getText();
+                 jumlahpintu=txjumlahpintu.getText();
+                 jumlahstopkontak=txjumlahstopkontak.getText();
+                 kondisistopkontak=txkondisistopkontak.getText();
+                 
+                if (posisistopkontak1.isSelected()==true)
+                    posisistopkontak=posisistopkontak1.getText();
+                if (posisistopkontak2.isSelected()==true)
+                    posisistopkontak=posisistopkontak2.getText();
+                
+                jumlahLCD=txjumlahLCD.getText();
+                
+                if (kondisiLCD1.isSelected()==true)
+                    kondisiLCD=kondisiLCD1.getText();
+                 if (kondisiLCD2.isSelected()==true)
+                    kondisiLCD=kondisiLCD2.getText();
+                 if (posisiLCD1.isSelected()==true)
+                    kondisiLCD=posisiLCD1.getText();
+                 if (posisiLCD2.isSelected()==true)
+                    kondisiLCD=posisiLCD2.getText();
+                 
+                jumlahlampu=txjumlahlampu.getText();
+                 
+                 
+                 if (posisilampu1.isSelected()==true)
+                    posisilampu=posisilampu1.getText();
+                 if (posisilampu2.isSelected()==true)
+                    posisilampu=posisilampu2.getText();
+                 
+                 jumlahkipas=txjumlahkipas.getText();
+                 
+                 if (posisikipas1.isSelected()==true)
+                    posisilampu=posisikipas1.getText();
+                 if (posisikipas2.isSelected()==true)
+                    posisilampu=posisikipas2.getText();
+                 
+                jumlahAC= txjumlahAC.getText();
+                 
+                 
+                 if (posisiAC1.isSelected()==true)
+                    posisiAC=posisiAC1.getText();
+                 if (posisiAC2.isSelected()==true)
+                    posisiAC=posisiAC2.getText();
+                 if (posisiAC3.isSelected()==true)
+                    posisiAC=posisiAC3.getText();
+                 
+                 if (SSID1.isSelected()==true)
+                    SSID=SSID1.getText();
+                 if (SSID2.isSelected()==true)
+                    SSID=SSID2.getText();
+                 
+                 if (bandhwith1.isSelected()==true)
+                    bandhwith=bandhwith1.getText();
+                 if (bandhwith2.isSelected()==true)
+                    bandhwith=bandhwith2.getText();
+                 
+                 jumlahCCTV=txjumlahCCTV.getText();
+                 
+                  if (posisiCCTV1.isSelected()==true)
+                    posisiCCTV=posisiCCTV1.getText();
+                  if (posisiCCTV2.isSelected()==true)
+                    posisiCCTV=posisiCCTV2.getText();
+                   
+                  if (x1.isSelected()==true)
+                    x=x1.getText();
+                  if (x2.isSelected()==true)
+                    x=x2.getText();
+                  
+                  if (sirkulasiudara1.isSelected()==true)
+                    sirkulasiudara=sirkulasiudara1.getText();
+                  if (sirkulasiudara2.isSelected()==true)
+                    sirkulasiudara=sirkulasiudara2.getText();
+                  
+                  if (s1.isSelected()==true)
+                    s=s1.getText();
+                  if (s2.isSelected()==true)
+                    s=s2.getText();
+                  
+                  if (y1.isSelected()==true)
+                    y=y1.getText();
+                  if (y2.isSelected()==true)
+                    y=y2.getText();
+                  
+                  if (z1.isSelected()==true)
+                    z=z1.getText();
+                  if (z2.isSelected()==true)
+                    z=z2.getText();
+                  
+                  if (a1.isSelected()==true)
+                    a=a1.getText();
+                  if (a2.isSelected()==true)
+                    a=a2.getText();
+                  
+                  if (b1.isSelected()==true)
+                    b=b1.getText();
+                  if (b2.isSelected()==true)
+                    b=b2.getText();
+                  
+                  if (c1.isSelected()==true)
+                    c=c1.getText();
+                  if (c2.isSelected()==true)
+                    c=c2.getText();
+                  
+                  if (d1.isSelected()==true)
+                    d=d1.getText();
+                  if (d2.isSelected()==true)
+                    d=d2.getText();
+                  
+                  if (e1.isSelected()==true)
+                    e=e1.getText();
+                  if (e2.isSelected()==true)
+                    e=e2.getText();
          String sql= "INSERT INTO ruangkelas VALUES ('"+ txnamaruang.getText()+"','"+ txlokasiruang.getText()+"', '"+ txnamafakultas.getText()+"', '"+ 
             txpanjang.getText()+"', '"+ txlebar.getText()+"','"+ txjumlahkursi.getText()+"','"+ txjumlahjendela.getText()+"','"+
             txjumlahpintu.getText()+"','"+ txjumlahstopkontak.getText()+"','"+ txkondisistopkontak.getText()+"','"+ 
@@ -509,6 +637,9 @@ public void simpanActionPerform(java.awt.event.ActionEvent event) {
        System.out.println("cetak");
        JOptionPane.showMessageDialog(null, "GAGAL");
    }
+  }catch (Exception a){
+                System.out.println("ERROR: "+a);
+            }
    
    txnamaruang.setText("");
    txlokasiruang.setText("");

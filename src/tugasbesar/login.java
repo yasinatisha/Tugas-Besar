@@ -65,6 +65,7 @@ public void simpanActionPerform(java.awt.event.ActionEvent event) {
 inputbaru a= new inputbaru();
 a.setVisible(true);
 a.komponenVisual();
+a.AksiReaksi();
    JOptionPane.showMessageDialog(null,"Login berhasil");
     }else{
      JOptionPane.showMessageDialog(null,"Login gagal");

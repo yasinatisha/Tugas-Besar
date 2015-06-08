@@ -2,13 +2,7 @@
 package tugasbesar;
 
  abstract public class TestRuangKelas extends ControlKelas {
-     
-//     public static void main(String[] args) {
-//         TestRuangKelas main = new TestRuangKelas(null, null, null, panjang, lebar, jumlahkursi, jumlahjendela, jumlahpintu, luas, rasio, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak, jumlahstopkontak) {
-//         }
-//     }
-     
-    public void utama(double HitungBentukRuang, double HitungRasioLuas, double JumlahStopkontak, double KondisiStopkontak, double PosisiStopkontak, int JumlahAC, double PosisiAC, int JumlahLCD, double KondisiLCD, double PosisiLCD, int Jumlahkipas, double PosisiKipas, int Jumlahlampu, double PosisiLampu, int JumlahCCTV, double PosisiCCTV, double InternetSSID, double InternetBandwidth, int Jumlahstopkontak) {
+ public void utama(double HitungBentukRuang, double HitungRasioLuas, double JumlahStopkontak, double KondisiStopkontak, double PosisiStopkontak, int JumlahAC, double PosisiAC, int JumlahLCD, double KondisiLCD, double PosisiLCD, int Jumlahkipas, double PosisiKipas, int Jumlahlampu, double PosisiLampu, int JumlahCCTV, double PosisiCCTV, double InternetSSID, double InternetBandwidth, int Jumlahstopkontak) {
         //controlKelas adm = new ControlKelas();
         luas = super.hitungluas();
         rasio= super.hitungrasio();
@@ -59,12 +53,4 @@ package tugasbesar;
             System.out.println("Rasio luas= " + rasio);
             System.out.println(":::::::::::::::::::::::::::::::::::::::::::::");
     }
-
-   
-
-//    private static class ControlKelasImpl extends ControlKelas {
-//
-//        public ControlKelasImpl() {
-//            super();
-//        }
-    }
+}

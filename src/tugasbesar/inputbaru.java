@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package tugasbesar;
 import java.io.*;
 import java.sql.*;
@@ -11,6 +5,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Locale;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
 
 class inputbaru extends JFrame{
     
@@ -86,20 +85,10 @@ JLabel lblx=new JLabel("Kondisi Lantai");
 JRadioButton x1=new JRadioButton("Bersih");
 JRadioButton x2=new JRadioButton("Kotor");
 JLabel lblk=new JLabel("Kondisi pintu");
-//JRadioButton k1=new JRadioButton("Bersih");
-//JRadioButton k2=new JRadioButton("Kotor");
 JLabel lbll=new JLabel("Kondisi jendela");
-//JRadioButton l1=new JRadioButton("Bersih");
-//JRadioButton l2=new JRadioButton("Kotor");
 JLabel lblm=new JLabel("Kondisi pintu");
-//JRadioButton m1=new JRadioButton("Bersih");
-//JRadioButton m2=new JRadioButton("Kotor");
 JLabel lbln=new JLabel("Kondisi atap");
-//JRadioButton n1=new JRadioButton("Bersih");
-//JRadioButton n2=new JRadioButton("Kotor");
 JLabel lblo=new JLabel("Kondisi dinding");
-//JRadioButton o1=new JRadioButton("Bersih");
-//JRadioButton o2=new JRadioButton("Kotor");
 
 //InputKebersihanKelas
 JLabel lblsirkulasiudara=new JLabel("Sirkulasi Udara");
@@ -183,8 +172,7 @@ String namafakultas="";
    String pencahayaan="";
    String kelembapan="";
    String suhu="";
-
-    
+ 
 inputbaru(){
 setTitle("iki sek nyacak");
 setLocation(200,100);
@@ -194,19 +182,14 @@ setLocationRelativeTo(null);
 setVisible(true);
 }
 
-void komponenVisual()
-{
-         
-
+void komponenVisual(){
 getContentPane().add(panel);
 JScrollPane scrollPane = new JScrollPane(panel);
 getContentPane().add(scrollPane, BorderLayout.NORTH); 
 
-
 panel.setBounds(10, 11, 493, 350);
 add(panel);
 panel.setLayout(null);
-//panel.setLayout(new FlowLayout());
 
 //InputIndentitasRuangKelas
 panel.add(lblnamaruang);
@@ -354,39 +337,14 @@ lblx.setBounds(10,490,120,20);
 
 panel.add(lblk);
 lblk.setBounds(10,510,120,20);
-//panel.add(k1);
-//k1.setBounds(125,490,50,20);
-//panel.add(k2);
-//k2.setBounds(250,490,50,20);
-//
 panel.add(lbll);
 lbll.setBounds(10,520,120,20);
-//panel.add(l1);
-//l1.setBounds(125,490,50,20);
-//panel.add(l2);
-//l2.setBounds(250,490,50,20);
-//
 panel.add(lblm);
 lblm.setBounds(10,540,120,20);
-//panel.add(m1);
-//m1.setBounds(125,490,50,20);
-//panel.add(m2);
-//m2.setBounds(250,490,50,20);
-//
 panel.add(lbln);
 lbln.setBounds(10,560,120,20);
-//panel.add(n1);
-//n1.setBounds(125,490,50,20);
-//panel.add(n2);
-//n2.setBounds(250,490,50,20);
-//
 panel.add(lblo);
 lblo.setBounds(10,580,120,20);
-//panel.add(o1);
-//o1.setBounds(125,490,50,20);
-//panel.add(o2);
-//o2.setBounds(250,490,50,20);
-
 panel.add(x1);
 x1.setBounds(125,600,80,20);
 panel.add(x2);
@@ -485,15 +443,11 @@ setVisible(true);
 //setVisible(true);
 }
 
-
 //fungsi tombol
-void AksiReaksi()
-{
+void AksiReaksi(){
 tblinsert.addActionListener(new ActionListener(){
-public void simpanActionPerform(java.awt.event.ActionEvent event) {
-	
+public void simpanActionPerform(java.awt.event.ActionEvent event) {	
 }
-
     @Override
     public void actionPerformed(ActionEvent event) {
         if (event.getSource()==tblinsert){
@@ -619,12 +573,12 @@ public void simpanActionPerform(java.awt.event.ActionEvent event) {
          String sql= "INSERT INTO ruangkelas VALUES ('"+ txnamaruang.getText()+"','"+ txlokasiruang.getText()+"', '"+ txnamafakultas.getText()+"', '"+ 
             txpanjang.getText()+"', '"+ txlebar.getText()+"','"+ txjumlahkursi.getText()+"','"+ txjumlahjendela.getText()+"','"+
             txjumlahpintu.getText()+"','"+ txjumlahstopkontak.getText()+"','"+ txkondisistopkontak.getText()+"','"+ 
-            posisistopkontak1.getText()+"','"+ txjumlahLCD.getText()+"','"+ kondisiLCD1.getText()+"','"+ posisiLCD1.getText()+"','"+
-            txjumlahlampu.getText()+"', '"+ posisilampu1.getText()+"','"+ txjumlahkipas.getText()+"','"+ posisikipas1.getText()+"','"+
+            lblposisistopkontak.getText()+"','"+ txjumlahLCD.getText()+"','"+ lblkondisiLCD.getText()+"','"+ lblposisiLCD.getText()+"','"+
+            txjumlahlampu.getText()+"', '"+ lblposisilampu.getText()+"','"+ txjumlahkipas.getText()+"','"+ lblposisikipas.getText()+"','"+
             txjumlahAC.getText()+"','"+ lblposisiAC.getText()+"','"+ lblSSID.getText()+"','"+ lblbandhwith.getText()+"','"+ txjumlahCCTV.getText()+"','"+
-            posisiCCTV1.getText()+"','"+ sirkulasiudara1.getText()+"','"+ txpencahayaan.getText()+"','"+ txkelembapan.getText()+"','"+
-            txsuhu.getText()+"','"+ x1.getText()+"','"+ s1.getText()+"','"+ y1.getText()+"','"+ z1.getText()+"','"+ 
-            a1.getText()+"','"+ b1.getText()+"','"+ c1.getText()+"','"+ d1.getText()+"','"+ e1.getText()+"')";
+            lblposisiCCTV.getText()+"','"+ lblsirkulasiudara.getText()+"','"+ txpencahayaan.getText()+"','"+ txkelembapan.getText()+"','"+
+            txsuhu.getText()+"','"+ lblx.getText()+"','"+ lbls.getText()+"','"+ lbly.getText()+"','"+ lblz.getText()+"','"+ 
+            lbla.getText()+"','"+ lblb.getText()+"','"+ lblc.getText()+"','"+ lbld.getText()+"','"+ lble.getText()+"')";
     
     System.out.println(sql);
     KONEKSI a= new KONEKSI();
@@ -633,13 +587,82 @@ public void simpanActionPerform(java.awt.event.ActionEvent event) {
    try{
        st.executeUpdate(sql);
        JOptionPane.showMessageDialog(null, "BERHASIL DITAMBAHKAN");
+
    }catch(Exception e){
        System.out.println("cetak");
        JOptionPane.showMessageDialog(null, "GAGAL");
    }
   }catch (Exception a){
-                System.out.println("ERROR: "+a);
-            }
+    System.out.println("ERROR: "+a);
+  }      
+   txnamaruang.setText("");
+   txlokasiruang.setText("");
+   txnamafakultas.setText("");
+   txpanjang.setText("");
+   txlebar.setText("");
+   txjumlahkursi.setText("");
+   txjumlahjendela.setText("");
+   txjumlahpintu.setText("");
+   txjumlahstopkontak.setText("");
+   txkondisistopkontak.setText("");
+   lblposisistopkontak.setText("");
+   txjumlahLCD.setText("");
+   lblkondisiLCD.setText("");
+   lblposisiLCD.setText("");
+   txjumlahlampu.setText("");
+   lblposisilampu.setText("");
+   txjumlahkipas.setText("");
+   lblposisikipas.setText("");
+   txjumlahAC.setText("");
+   lblposisiAC.setText("");
+   lblSSID.setText("");
+   lblbandhwith.setText("");
+   txjumlahCCTV.setText("");
+   lblposisiCCTV.setText("");
+   lblsirkulasiudara.setText("");
+   lblpencahayaan.setText("");
+   lblkelembapan.setText("");
+   lblsuhu.setText("");
+   lblx.setText("");
+   lbls.setText("");
+   lbly.setText("");
+   lblz.setText("");
+   lbla.setText("");
+   lblb.setText("");
+   lblc.setText("");
+   lbld.setText("");
+   lble.setText("");
+  }
+ }
+});
+
+tblupdate.addActionListener(new ActionListener(){
+public void simpanActionPerform(java.awt.event.ActionEvent event) {	
+}
+    @Override
+    public void actionPerformed(ActionEvent event) {
+        if (event.getSource()==tblupdate){
+         String sql= "update ruangkelas lokasiruang= '"+ txlokasiruang.getText()+"',namafakultas= '"+ txnamafakultas.getText()+"',panjang= '"+ 
+            txpanjang.getText()+"',lebar= '"+ txlebar.getText()+"',jumlahkursi='"+ txjumlahkursi.getText()+"',jumlahjendela='"+ txjumlahjendela.getText()+"',jumlahpintu='"+
+            txjumlahpintu.getText()+"',jumlahstopkontak='"+ txjumlahstopkontak.getText()+"',kondisistopkontak='"+ txkondisistopkontak.getText()+"',posisistopkontak='"+ 
+            lblposisistopkontak.getText()+"',jumlahLCD='"+ txjumlahLCD.getText()+"',kondisiLCD='"+ lblkondisiLCD.getText()+"',posisiLCD='"+ lblposisiLCD.getText()+"',jumlahlampu='"+
+            txjumlahlampu.getText()+"', '"+ lblposisilampu.getText()+"',jumlahkipas='"+ txjumlahkipas.getText()+"',posisikipas='"+ lblposisikipas.getText()+"',jumlahAC='"+
+            txjumlahAC.getText()+"',posisiAC='"+ lblposisiAC.getText()+"',SSID='"+ lblSSID.getText()+"',bandhwith='"+ lblbandhwith.getText()+"',jumlahCCTV='"+ txjumlahCCTV.getText()+"',posisiCCTV='"+
+            lblposisiCCTV.getText()+"',sirkulasiudara='"+ lblsirkulasiudara.getText()+"',pencahayaan='"+ lblpencahayaan.getText()+"',kelembapan='"+ lblkelembapan.getText()+"',suhu='"+
+            lblsuhu.getText()+"',x='"+ lblx.getText()+"',s='"+ lbls.getText()+"',y='"+ lbly.getText()+"',z='"+ lblz.getText()+"',a='"+ 
+            lbla.getText()+"',b='"+ lblb.getText()+"',c='"+ lblc.getText()+"',d='"+ lbld.getText()+"',e='"+ lble.getText()+"' WHERE ruangkelas LIKE namaruang='"+ txnamaruang.getText()+"'";
+    
+    System.out.println(sql);
+    KONEKSI a= new KONEKSI();
+    Statement st = a.getConnection1();
+    
+   try{
+       st.executeUpdate(sql);
+       JOptionPane.showMessageDialog(null, "BERHASIL DIEDIT");
+   }catch(Exception e){
+       System.out.println("cetak");
+       JOptionPane.showMessageDialog(null, "GAGAL");
+   }
    
    txnamaruang.setText("");
    txlokasiruang.setText("");
@@ -678,18 +701,83 @@ public void simpanActionPerform(java.awt.event.ActionEvent event) {
    lblc.setText("");
    lbld.setText("");
    lble.setText("");
-    }
-    }
+ }
+}
 });
 
+tbldelete.addActionListener(new ActionListener(){
+public void simpanActionPerform(java.awt.event.ActionEvent event) {
+}
+    @Override
+    public void actionPerformed(ActionEvent event) {
+        if (event.getSource()==tbldelete){
+         String sql= "update ruangkelas lokasiruang= '"+ txlokasiruang.getText()+"',namafakultas= '"+ txnamafakultas.getText()+"',panjang= '"+ 
+            txpanjang.getText()+"',lebar= '"+ txlebar.getText()+"',jumlahkursi='"+ txjumlahkursi.getText()+"',jumlahjendela='"+ txjumlahjendela.getText()+"',jumlahpintu='"+
+            txjumlahpintu.getText()+"',jumlahstopkontak='"+ txjumlahstopkontak.getText()+"',kondisistopkontak='"+ txkondisistopkontak.getText()+"',posisistopkontak='"+ 
+            lblposisistopkontak.getText()+"',jumlahLCD='"+ txjumlahLCD.getText()+"',kondisiLCD='"+ lblkondisiLCD.getText()+"',posisiLCD='"+ lblposisiLCD.getText()+"',jumlahlampu='"+
+            txjumlahlampu.getText()+"', '"+ lblposisilampu.getText()+"',jumlahkipas='"+ txjumlahkipas.getText()+"',posisikipas='"+ lblposisikipas.getText()+"',jumlahAC='"+
+            txjumlahAC.getText()+"',posisiAC='"+ lblposisiAC.getText()+"',SSID='"+ lblSSID.getText()+"',bandhwith='"+ lblbandhwith.getText()+"',jumlahCCTV='"+ txjumlahCCTV.getText()+"',posisiCCTV='"+
+            lblposisiCCTV.getText()+"',sirkulasiudara='"+ lblsirkulasiudara.getText()+"',pencahayaan='"+ lblpencahayaan.getText()+"',kelembapan='"+ lblkelembapan.getText()+"',suhu='"+
+            lblsuhu.getText()+"',x='"+ lblx.getText()+"',s='"+ lbls.getText()+"',y='"+ lbly.getText()+"',z='"+ lblz.getText()+"',a='"+ 
+            lbla.getText()+"',b='"+ lblb.getText()+"',c='"+ lblc.getText()+"',d='"+ lbld.getText()+"',e='"+ lble.getText()+"' WHERE ruangkelas LIKE namaruang='"+ txnamaruang.getText()+"'";
+    
+    System.out.println(sql);
+    KONEKSI a= new KONEKSI();
+    Statement st = a.getConnection1();
+    
+   try{
+       st.executeUpdate(sql);
+       JOptionPane.showMessageDialog(null, "BERHASIL DIEDIT");
+   }catch(Exception e){
+       System.out.println("cetak");
+       JOptionPane.showMessageDialog(null, "GAGAL");
+   }
+   
+   txnamaruang.setText("");
+   txlokasiruang.setText("");
+   txnamafakultas.setText("");
+   txpanjang.setText("");
+   txlebar.setText("");
+   txjumlahkursi.setText("");
+   txjumlahjendela.setText("");
+   txjumlahpintu.setText("");
+   txjumlahstopkontak.setText("");
+   txkondisistopkontak.setText("");
+   lblposisistopkontak.setText("");
+   txjumlahLCD.setText("");
+   lblkondisiLCD.setText("");
+   lblposisiLCD.setText("");
+   txjumlahlampu.setText("");
+   lblposisilampu.setText("");
+   txjumlahkipas.setText("");
+   lblposisikipas.setText("");
+   txjumlahAC.setText("");
+   lblposisiAC.setText("");
+   lblSSID.setText("");
+   lblbandhwith.setText("");
+   txjumlahCCTV.setText("");
+   lblposisiCCTV.setText("");
+   lblsirkulasiudara.setText("");
+   lblpencahayaan.setText("");
+   lblkelembapan.setText("");
+   lblsuhu.setText("");
+   lblx.setText("");
+   lbls.setText("");
+   lbly.setText("");
+   lblz.setText("");
+   lbla.setText("");
+   lblb.setText("");
+   lblc.setText("");
+   lbld.setText("");
+   lble.setText("");
+ }
+}
+});
 
 }
-}
-class AplikasiControlPane
-{
-public static void main(String [] args){
+public static void main(String [] args){ 
 inputbaru ap=new inputbaru();
 ap.komponenVisual();
 ap.AksiReaksi();
-}
+  }
 }

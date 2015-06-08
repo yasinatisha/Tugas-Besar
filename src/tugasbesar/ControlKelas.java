@@ -5,13 +5,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
     public ControlKelas(String namaruang, String lokasiruang, String namafakultas, double panjang, double lebar, double jumlahkursi, double jumlahjendela, double jumlahpintu, double luas, double rasio, int jumlahstopkontak, int kondisistopkontak, int posisistopkontak, int jumlahLCD, int kondisiLCD, int posisiLCD, int jumlahlampu, int posisilampu, int jumlahkipas, int posisikipas, int jumlahAC, int posisiAC, int SSID, int bandwidth, int jumlahCCTV, int posisiCCTV, int sirkulasiudara, int pencahayaan, int kelembapan, int suhu) {
         super(namaruang, lokasiruang, namafakultas, panjang, lebar, jumlahkursi, jumlahjendela, jumlahpintu, luas, rasio, jumlahstopkontak, kondisistopkontak, posisistopkontak, jumlahLCD, kondisiLCD, posisiLCD, jumlahlampu, posisilampu, jumlahkipas, posisikipas, jumlahAC, posisiAC, SSID, bandwidth, jumlahCCTV, posisiCCTV, sirkulasiudara, pencahayaan, kelembapan, suhu);
     }
-   
-    //    input i = new input();
-//    i.inputkelas;
-//    Ruangkelas k = new RuangKelas();
-//    k = i.getRuangKelas();
-    
-    
+
      //method-method analisis
     double hitungluas(){
         this.luas= panjang*lebar;
@@ -298,7 +292,6 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
 
     @Override
     public int JumlahLCD(int JumlahLCD) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     if (this.getJumlahLCD()>=1){
             System.out.println("SESUAI");
         }else{
@@ -306,11 +299,9 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
         }
         return JumlahLCD;
     }
-
     @Override
     public int Jumlahlampu(int Jumlahlampu) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    if (this.getJumlahlampu()>=8){
+     if (this.getJumlahlampu()>=8){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -320,8 +311,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
 
     @Override
     public int Jumlahkipas(int Jumlahkipas) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-     if (this.getJumlahkipas()>=2){
+       if (this.getJumlahkipas()>=2){
             System.out.println("SESUAI");
         }else{
             System.out.println("TIDAK SESUAI");
@@ -331,7 +321,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
 
     @Override
     public int JumlahAC(int JumlahAC) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       
     if (this.getJumlahAC()>=1){
             System.out.println("SESUAI");
         }else{
@@ -342,7 +332,7 @@ abstract public class ControlKelas extends RuangKelas implements Kelas {
 
     @Override
     public int JumlahCCTV(int JumlahCCTV) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     if (this.getJumlahCCTV()>=2){
                 System.out.println("SESUAI");
             }else{
